@@ -1,0 +1,47 @@
+/* components/LogoCarousel.module.css */
+
+/* components/LogoCarousel.module.css */
+
+.carouselWrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+  /* background: #fff; */
+  mask-image: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(255,255,255,0) 100%);
+  -webkit-mask-image: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(255,255,255,0) 100%);
+}
+
+.carousel {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  align-items: center;
+}
+
+.logo {
+  flex: 0 0 auto;
+  margin-right: 50px;
+  filter: grayscale(100%) brightness(0.6); /* logos in grey tones */
+  transition: filter 0.3s;
+}
+
+.logo img {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Optional: hover to slightly highlight */
+.logo:hover {
+  filter: grayscale(0%) brightness(1);
+}
+
+/* Smooth continuous scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
