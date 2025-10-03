@@ -34,6 +34,7 @@ export default function HeaderSection() {
         <li><a href="#faqs" className="text-sm text-gray-400 hover:text-black">FAQs</a></li>
       </ul>
 
+
       {/* Slim CTA */}
       <a
         href="#pricing"
