@@ -50,10 +50,10 @@ export default function FeaturesSection() {
       <div className="max-w-4xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-14">
-          <h2 className="text-2xl md:text-md subheader-text font-bold mb-4">
+          <h2 className="text-2xl md:text-md subheader-text font-bold mb-4 text-black">
             Benefit of kree8
           </h2>
-          <div className="text-sm normal-text text-gray-600 max-sm mx-auto">
+          <div className="text-sm normal-text text-black max-sm mx-auto">
             <p>We do things a little differently, here's a quick overview of just a</p>
             <p>few of Stack Coworking's unique offerings.</p>
           </div>
@@ -80,7 +80,7 @@ export default function FeaturesSection() {
                 </motion.div>
 
                 <h3 className="text-sm subheader-text font-semibold mb-2">{feature.title}</h3>
-                <p className="text-gray-600 text-xs normal-text">{feature.desc}</p>
+                <p className="text-black text-xs normal-text">{feature.desc}</p>
               </div>
             );
           })}

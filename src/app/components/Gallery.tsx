@@ -18,13 +18,13 @@ const images: GalleryImage[] = [
 export default function Gallery() {
   return (
     <section className="w-full bg-[#f5f5f5e8] py-12">
-      <div className="max-w-4xl mx-auto px-6 text-center">
-        <div className="border-gray-300 border-b border-dashed mb-4">
+      <div className="max-w-3xl mx-auto px-6 text-center border-black/20 border-r-[1.5px] border-l-[1.5px] border-dashed">
+        <div className="border-black/20 border-b-[1.5px] border-dashed mb-4">
           <div className="w-1/2 max-w-sm mx-auto mb-4">
-            <h2 className="text-gray-600 text-xs normal-text mt-2">
+            <h2 className="text-black text-xs normal-text mt-2">
               Still confused about us
             </h2>
-            <div className="text-2xl md:text-md subheader-text font-bold mb-4">
+            <div className="text-3xl text-black md:text-md subheader-text font-bold mb-4">
               <p>See our work</p>
             </div>
           </div>

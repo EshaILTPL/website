@@ -87,7 +87,7 @@ const WhyChooseUs: React.FC = () => {
             ref={sectionRef}
             id="why-choose-us"
             className="w-full bg-[#f5f5f5e8] py-12  border border-dashed border-gray-300">
-            <div className="max-w-4xl mx-auto px-6 text-center  border border-dashed border-gray-300">
+            <div className="max-w-4xl mx-auto px-6 text-center text-black border border-dashed border-gray-300">
                 <div className="max-w-6xl mx-auto">
                     {/* Header Section */}
                     <div className="max-w-4xl mx-auto">
@@ -157,8 +157,8 @@ const WhyChooseUs: React.FC = () => {
                     </div>
 
                     {/* Footer Note */}
-                    <p className="text-gray-600 border-t border-gray-300 border-dashed text-sm normal-text mt-5">
-                   And here's come the <span style={{ fontWeight: "500" }} className="font-bold normal-text text-black text-md">Sauce...</span>
+                    <p className="text-black border-t border-gray-300 border-dashed text-sm normal-text mt-5">
+                   And here's come the <span style={{ fontWeight: "500" }} className="font-bold normal-text text-black text-lg">Sauce...</span>
                 </p>
                 </div>
             </div>
