@@ -40,7 +40,7 @@ export default function StepsWithVideo() {
         {/* Heading */}
         <div className="w-1/2 max-w-sm mx-auto mb-14">
           <div className="text-center">
-            <h2 className="text-3xl md:text-md mb-4 text-black px-4 subheader-text">
+            <h2 className="text-2xl md:text-md subheader-text font-bold mb-4 text-black">
               How simple it can be to get your Projects Done
             </h2>
             <h3 className="text-xs text-black mx-auto px-6 max-w-[80%] leading-relaxed">

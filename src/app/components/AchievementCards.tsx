@@ -40,7 +40,7 @@ export default function AchievementCards() {
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold mb-3 text-black">Our Achievement</h2>
         <p className="text-black max-w-2xl mx-auto mb-10">
-          Curious about what we've accomplished? Let our track record speak for
+          Curious about what we&apos;ve accomplished? Let our track record speak for
           itself.
         </p>
 

@@ -11,6 +11,7 @@ import TestimonialCard from "./components/Testimonials";
 import ServicesSection from "./components/ServicesSection";
 import WhyChooseUs from "./components/WhyChooseUs";
 import ServiceCards from "./components/DesignServices";
+import FaqSection from "./components/FaqSection";
 
 // import { CheckCircle, Clock, Lock, Infinity } from "lucide-react";
 
@@ -38,6 +39,8 @@ export default function HeaderSection() {
                     href={item.href}
                     className="text-xs text-gray-500 transition-all duration-300 group-hover:text-black group-hover:-translate-y-1 inline-block"
                   >
+                    {/* ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK8QpFCT2v+lTOrPC6PscCz+nLPpbYXPAIGsB4V/gb0h esha@iltpl.com
+ */}
                     {item.label}
                     {/* Black dot */}
                     <span className="absolute left-1/2 bottom-[-6px] w-1.5 h-1.5 rounded-full bg-black scale-0 group-hover:scale-100 transition-transform duration-300 -translate-x-1/2"></span>
@@ -76,12 +79,14 @@ export default function HeaderSection() {
       {/* <main> */}
       <TestimonialCard />
       <LogoCarousel />
-      {/* <FeaturesSection /> giving mobile screen right side extra space */}
-      <StepsWithVideo />
+       <FeaturesSection />
+       {/*giving mobile screen right side extra space */}
+       <StepsWithVideo />
       <ServicesSection />
       <Gallery />
-      <WhyChooseUs />
+      <WhyChooseUs /> 
       <ServiceCards/>
+      <FaqSection />
       {/* <AchievementCards /> */}
 
       {/* Footer */}

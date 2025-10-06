@@ -7,11 +7,14 @@ const logos = [
   "/img/logo-variant.png",
   "/img/logo-variant.png",
   "/img/logo-variant.png",
+  "/img/logo-variant.png",
+  "/img/logo-variant.png",
+  "/img/logo-variant.png",
 ];
 
 export default function LogoCarousel() {
   return (
-    <div className={`${styles.carouselWrapper}`} style={{marginTop:"4%"}}>
+    <div className={`border-dashed border-b-[1.5px] border-black/20 ${styles.carouselWrapper}`} style={{marginTop:"4%"}}>
       <div className={styles.carousel}>
         {/* Duplicate logos for seamless loop */}
         {[...logos, ...logos].map((logo, idx) => (

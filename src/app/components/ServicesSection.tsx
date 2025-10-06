@@ -2,15 +2,15 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const services = [
-  { title: "Website Design", imgLeft: "/img/art-1.jpg", imgRight: "/img/art-2.jpg" },
-  { title: "Mobile App Design", imgLeft: "/img/art-2.jpg", imgRight: "/img/art-1.jpg" },
-  { title: "Framer and Webflow Development (No-Code)", imgLeft: "/img/art-2.jpg", imgRight: "/img/art-1.jpg" },
-  { title: "Social Media Graphics", imgLeft: "/img/art-2.jpg", imgRight: "/img/art-1.jpg" },
-  { title: "Pitch Decks", imgLeft: "/img/art-1.jpg", imgRight: "/img/art-2.jpg" },
-  { title: "Branding", imgLeft: "/img/art-2.jpg", imgRight: "/img/art-1.jpg" },
-  { title: "Business Cards", imgLeft: "/img/art-2.jpg", imgRight: "/img/art-1.jpg" },
-  { title: "Logos", imgLeft: "/img/art-1.jpg", imgRight: "/img/art-2.jpg" },
-  { title: "Packaging", imgLeft: "/img/art-2.jpg", imgRight: "/img/art-1.jpg" },
+  { title: "Website Design", imgLeft: "/img/accom-1.jpg", imgRight: "/img/cowork-2.jpg" },
+  { title: "Mobile App Design", imgLeft: "/img/accom-1.jpg", imgRight: "/img/cowork-2.jpg" },
+  { title: "Framer and Webflow Development (No-Code)", imgLeft: "/img/cowork-2.jpg", imgRight: "/img/cowork-2.jpg" },
+  { title: "Social Media Graphics", imgLeft: "/img/accom-1.jpg", imgRight: "/img/cowork-2.jpg" },
+  { title: "Pitch Decks", imgLeft: "/img/accom-1.jpg", imgRight: "/img/cowork-2.jpg" },
+  { title: "Branding", imgLeft: "/img/cowork-2.jpg", imgRight: "/img/accom-1.jpg" },
+  { title: "Business Cards", imgLeft: "/img/accom-1.jpg", imgRight: "/img/cowork-2.jpg" },
+  { title: "Logos", imgLeft: "/img/cowork-2.jpg", imgRight: "/img/accom-1.jpg" },
+  { title: "Packaging", imgLeft: "/img/cowork-2.jpg", imgRight: "/img/accom-1.jpg" },
 ];
 
 export default function ServicesSection() {
@@ -21,7 +21,7 @@ export default function ServicesSection() {
       <div className="max-w-3xl mx-auto px-6 text-center border-r-[1.5px] border-l-[1.5px] border-dashed border-black/20">
         <div className="max-w-4xl mx-auto">
           <div className="w-1/2 max-w-sm mx-auto mb-4">
-            <h2 className="text-3xl md:text-md subheader-text font-bold mb-4 text-black">
+            <h2 className="text-2xl md:text-md subheader-text font-bold mb-4 text-black">
               We are here to Serve...
             </h2>
             <div className="text-xs normal-text text-black max-sm mx-auto">

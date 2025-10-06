@@ -26,9 +26,10 @@
 }
 
 .logo img {
-  height: 30px;
+  height: 20px;
   width: auto;
   object-fit: contain;
+  opacity: 40%;
 }
 
 /* Optional: hover to slightly highlight */

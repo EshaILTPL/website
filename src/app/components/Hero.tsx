@@ -83,7 +83,7 @@ export default function Hero() {
                 {/* Item 1 */}
                 <div className="sm:border-r border-dashed border-black/20 flex items-center gap-4">
                     <div className="bg-gray-300 p-3 rounded-xl flex items-center justify-center">
-                        <Clock className="w-4 h-4 text-black animate-path-draw" />
+                        <Clock className="w-4 h-4 text-black animate-spin-slow" />
                     </div>
                     <h3 style={{ fontWeight: "500" }} className="normal-text text-xs text-black">48 Hours Delivery</h3>
                 </div>
@@ -91,7 +91,7 @@ export default function Hero() {
                 {/* Item 2 */}
                 <div className="sm:border-r border-dashed border-r-[1.5px] border-black/20 flex items-center gap-4">
                     <div className="bg-gray-300 p-3 rounded-xl flex items-center justify-center">
-                        <Lock className="w-4 h-4 text-black animate-path-draw" />
+                        <Lock className="w-4 h-4 text-black animate-bounce" />
                     </div>
                     <h3 style={{ fontWeight: "500" }} className="normal-text text-xs text-black">Access to Private Design Portal</h3>
                 </div>
@@ -99,7 +99,7 @@ export default function Hero() {
                 {/* Item 3 */}
                 <div className="flex items-center gap-4 border-dashed border-black/20">
                     <div className="bg-gray-300 p-3 rounded-xl flex items-center justify-center">
-                        <Infinity className="w-4 h-4 text-black animate-path-draw" />
+                        <Infinity className="w-4 h-4 text-black animate-pulse-slow" />
                     </div>
                     <h3 style={{ fontWeight: "500" }} className="normal-text text-xs text-black">Unlimited Design Requests</h3>
                 </div>
