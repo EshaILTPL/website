@@ -64,13 +64,13 @@ export default function Hero() {
                     </motion.div>
 
                     {/* Button */}
-                    <div className="mt-8">
+                    <div className="mt-8 bg-none">
                         <button
-                            className="bg-black shadow-xl text-white psx-10 pys-3 rounded-full transition-all duration-300 relative overflow-hidden min-w-[50px]" style={{ letterSpacing: "-0.04em" }}
+                            className="price-button-bg shadow-xl text-white psx-10 pys-3 rounded-full transition-all duration-300 relative overflow-hidden min-w-[50px]" style={{ letterSpacing: "-0.04em" }}
                         >
                             <a
                                 href="#pricing"
-                                className="relative inline-flex items-center normal-text justify-center bg-black text-white text-xs font-small px-3 py-3 rounded-full min-w-[50px] transition-all duration-500 overflow-hidden group"
+                                className="relative inline-flex items-center normal-text justify-center text-white text-xs font-small px-3 py-3 rounded-full min-w-[50px] transition-all duration-500 overflow-hidden group"
                             >
                                 {/* Default text */}
                                 <span className="transform transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-xl group-hover:shadow-gray-400 group-hover:opacity-0">

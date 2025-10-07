@@ -46,12 +46,15 @@ export default function HeaderSection() {
             </ul>
 
             {/* Slim CTA */}
+            <button
+                            className="price-button-bg shadow-xl text-white psx-10 pys-3 rounded-full transition-all duration-300 relative overflow-hidden min-w-[50px]" style={{ letterSpacing: "-0.04em" }}
+                        >
             <a
               href="#pricing"
-              className="relative shadow-xl shadow-black/20 inline-flex items-center justify-center text-xs font-small px-3 py-3 rounded-full min-w-[50px] transition-all duration-500 overflow-hidden group text-white normal-text"
+              className="relative shadow-xl shadow-black/20 inline-flex items-center justify-center text-xs font-small px-3 py-3 rounded-full min-w-[50px] transition-all duration-500 overflow-hidden group text-white  normal-text"
               style={{
                 letterSpacing: "-0.03em",
-                backgroundColor: "black",
+                // backgroundColor: "#E3767B",
                 transform: "translateY(0)",
               }}
               onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-3px)")}
@@ -67,6 +70,7 @@ export default function HeaderSection() {
                 Get Started
               </span>
             </a>
+            </button>
           </div>
         </div>
       </nav>

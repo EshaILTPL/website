@@ -54,7 +54,7 @@ export default function FeaturesSection() {
             <div className="max-w-4xl mx-auto">
               <div className="w-1/2 max-w-sm mx-auto mb-10">
                 <h2 className="text-2xl md:text-md subheader-text font-bold mb-4">
-                  Benefit of kree8
+                  Benefit of InspiringLife
                 </h2>
                 <div className="text-xs normal-text text-black">
                   <p>We do things a little differently, here&apos;s a quick overview of just a</p>
@@ -111,11 +111,11 @@ export default function FeaturesSection() {
             <div className="flex items-center justify-center mb-4">
               <div className="mt-8">
                 <button
-                  className="bg-black shadow-xl text-white psx-10 pys-3 rounded-full transition-all duration-300 relative overflow-hidden min-w-[50px]" style={{ letterSpacing: "-0.04em" }}
+                  className="price-button-bg shadow-xl text-white psx-10 pys-3 rounded-full transition-all duration-300 relative overflow-hidden min-w-[50px]" style={{ letterSpacing: "-0.04em" }}
                 >
                   <a
                     href="#pricing"
-                    className="relative inline-flex items-center normal-text justify-center bg-black text-white text-xs font-small px-3 py-3 rounded-full min-w-[50px] transition-all duration-500 overflow-hidden group"
+                    className="relative inline-flex items-center normal-text justify-center text-white text-xs font-small px-3 py-3 rounded-full min-w-[50px] transition-all duration-500 overflow-hidden group"
                   >
                     {/* Default text */}
                     <span className="transform transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-xl group-hover:shadow-gray-400 group-hover:opacity-0">

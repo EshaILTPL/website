@@ -24,7 +24,7 @@ export default function TestimonialsCarousel() {
                     pagination={{ el: ".custom-pagination", clickable: true }}
                     spaceBetween={20}
                     centeredSlides={true}
-                    slidesPerView={3}
+                    slidesPerView={2.5}
                     breakpoints={{
                         0: { slidesPerView: 1.05, centeredSlides: true, spaceBetween: 12 },
                         640: { slidesPerView: 1.25, centeredSlides: true, spaceBetween: 16 },

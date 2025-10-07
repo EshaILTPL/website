@@ -14,50 +14,50 @@ export const testimonials: Testimonial[] = [
     id: "t1",
     images: ["/img/accom-1.jpg", "/img/accom-2.jpg"], // put real images in public/img
     quote:
-      "KREE8's graphic design quality is unmatched. Whether it's branding or marketing materials, their service keeps everything seamless and affordable",
+      "InspiringLife's graphic design quality is unmatched. Whether it's branding or marketing materials, their service keeps everything seamless and affordable",
     author: "Rohan Jhaveri",
     role: "Founder of 505 Coffee",
     avatar: "/img/rohan.png",
-    reply: { text: "We’ll love to work with you ❤️", from: "kree8" },
+    reply: { text: "We’ll love to work with you ❤️", from: "InspiringLife" },
   },
   {
     id: "t2",
     images: ["/img/accom-1.jpg", "/img/accom-2.jpg"], // put real images in public/img
     quote:
-      "KREE8's graphic design quality is unmatched. Whether it's branding or marketing materials, their service keeps everything seamless and affordable",
+      "InspiringLife's graphic design quality is unmatched. Whether it's branding or marketing materials, their service keeps everything seamless and affordable",
     author: "Rohan Jhaveri",
     role: "Founder of 505 Coffee",
     avatar: "/img/rohan.png",
-    reply: { text: "We’ll love to work with you ❤️", from: "kree8" },
+    reply: { text: "We’ll love to work with you ❤️", from: "InspiringLife" },
   },
   {
     id: "t3",
     images: ["/img/accom-1.jpg", "/img/accom-2.jpg"], // put real images in public/img
     quote:
-      "KREE8's graphic design quality is unmatched. Whether it's branding or marketing materials, their service keeps everything seamless and affordable",
+      "InspiringLife's graphic design quality is unmatched. Whether it's branding or marketing materials, their service keeps everything seamless and affordable",
     author: "Rohan Jhaveri",
     role: "Founder of 505 Coffee",
     avatar: "/img/rohan.png",
-    reply: { text: "We’ll love to work with you ❤️", from: "kree8" },
+    reply: { text: "We’ll love to work with you ❤️", from: "InspiringLife" },
   },
   {
     id: "t4",
     images: ["/img/accom-1.jpg", "/img/accom-2.jpg"], // put real images in public/img
     quote:
-      "KREE8's graphic design quality is unmatched. Whether it's branding or marketing materials, their service keeps everything seamless and affordable",
+      "InspiringLife's graphic design quality is unmatched. Whether it's branding or marketing materials, their service keeps everything seamless and affordable",
     author: "Rohan Jhaveri",
     role: "Founder of 505 Coffee",
     avatar: "/img/rohan.png",
-    reply: { text: "We’ll love to work with you ❤️", from: "kree8" },
+    reply: { text: "We’ll love to work with you ❤️", from: "InspiringLife" },
   },
   {
     id: "t5",
     images: ["/img/accom-1.jpg", "/img/accom-2.jpg"], // put real images in public/img
     quote:
-      "KREE8's graphic design quality is unmatched. Whether it's branding or marketing materials, their service keeps everything seamless and affordable",
+      "InspiringLife's graphic design quality is unmatched. Whether it's branding or marketing materials, their service keeps everything seamless and affordable",
     author: "Rohan Jhaveri",
     role: "Founder of 505 Coffee",
     avatar: "/img/rohan.png",
-    reply: { text: "We’ll love to work with you ❤️", from: "kree8" },
+    reply: { text: "We’ll love to work with you ❤️", from: "InspiringLife" },
   },
 ];

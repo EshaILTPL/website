@@ -5,8 +5,8 @@ import { Plus } from "lucide-react";
 const faqs = [
     {
         id: "faq1",
-        q: "Who's behind kree8?",
-        a: "kree8 is led by a passionate team Ved, a brand strategist and creative mind, and Jay, a talented designer and developer. Together, they deliver innovative design solutions tailored to each client’s unique needs and help brands unlock their full potential through strategic, impactful, and visually stunning designs.",
+        q: "Who's behind InspiringLife?",
+        a: "InspiringLife is led by a passionate team Ved, a brand strategist and creative mind, and Jay, a talented designer and developer. Together, they deliver innovative design solutions tailored to each client’s unique needs and help brands unlock their full potential through strategic, impactful, and visually stunning designs.",
     },
     {
         id: "faq2",

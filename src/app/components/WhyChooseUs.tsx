@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 
 interface ComparisonRow {
     feature: string;
-    kree8: string | React.ReactNode;
+    InspiringLife: string | React.ReactNode;
     employees: string | React.ReactNode;
     otherAgencies: string | React.ReactNode;
 }
@@ -16,43 +16,43 @@ const WhyChooseUs: React.FC = () => {
     const comparisonData: ComparisonRow[] = [
         {
             feature: 'Cost',
-            kree8: '✓ $',
+            InspiringLife: '✓ $',
             employees: '✗ $$$$ (High Overhead)',
             otherAgencies: '✗ $$'
         },
         {
             feature: 'Senior-Level Designer',
-            kree8: '✓ Guaranteed',
+            InspiringLife: '✓ Guaranteed',
             employees: '✗ Hopefully',
             otherAgencies: '✗ Maybe'
         },
         {
             feature: 'Turnaround Time',
-            kree8: '✓ 48 hours for most projects',
+            InspiringLife: '✓ 48 hours for most projects',
             employees: '✗ Can take weeks due to other tasks',
             otherAgencies: '✗ Weeks, depending on workload'
         },
         {
             feature: 'Start Time',
-            kree8: '✓ Today itself',
+            InspiringLife: '✓ Today itself',
             employees: '✗ Weeks to onboard and train',
             otherAgencies: '✗ Days to set up agreements'
         },
         {
             feature: 'Unlimited Revisions',
-            kree8: '✓ Yes, we keep working until it\'s perfect',
+            InspiringLife: '✓ Yes, we keep working until it\'s perfect',
             employees: '✗ Limited, with extra time constraints',
             otherAgencies: '✗ Limited revisions per project'
         },
         {
             feature: 'Client Portal',
-            kree8: '✓ Yes, track progress easily',
+            InspiringLife: '✓ Yes, track progress easily',
             employees: '✗ Internal systems may vary, often less accessible',
             otherAgencies: '✗ No consistent system'
         },
         {
             feature: 'Scalability',
-            kree8: '✓ Scale up or down with ease',
+            InspiringLife: '✓ Scale up or down with ease',
             employees: '✓ Possible',
             otherAgencies: '✗ Limited by freelancer\'s capacity'
         }
@@ -113,7 +113,7 @@ const WhyChooseUs: React.FC = () => {
                                             Feature
                                         </th>
                                         <th className="p-4 text-sm bg-white text-left font-semibold text-black border-b-2 border-gray-300">
-                                            Kree8
+                                            InspiringLife
                                         </th>
                                         <th className="p-4 text-sm bg-white text-left font-semibold text-black border-b-2 border-gray-200">
                                             Employees
@@ -145,7 +145,7 @@ const WhyChooseUs: React.FC = () => {
                                                 {row.feature}
                                             </td>
                                             <td className="p-4 text-left text-black bg-white normal-text text-xs">
-                                                {row.kree8}
+                                                {row.InspiringLife}
                                             </td>
                                             <td className="p-4 text-left text-black bg-white normal-text text-xs">
                                                 {row.employees}

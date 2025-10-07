@@ -57,7 +57,9 @@ letter-spacing: -0.03em;
   font-style: normal;
 }  
 */
-
+.price-button-bg{
+  background-color: #E3767B;
+}
 
 @keyframes kenburns {
   0% {
