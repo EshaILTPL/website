@@ -8,37 +8,36 @@ import "swiper/css/pagination";
 
 export default function TestimonialsCarousel() {
     return (
-        <div
-            style={{ backgroundColor: "#f5f5f5e8" }}
-            className="w-full overflow-x-visible px-4 py-10 sm:py-10 md:px-10 sm:px-6 md:px-8"
+        <div style={{ backgroundColor: "#f5f5f5e8" }} className="relative w-full flex justify-center px-2 py-10 sm:py-10 md:px-10 sm:px-6 md:px-8">
+  <div className="relative w-full max-w-4xl overflow-hidden">
+    {/* Fade edges */}
+    <div className="pointer-events-none absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-[#f5f5f5e8] to-transparent z-20"></div>
+    <div className="pointer-events-none absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-[#f5f5f5e8] to-transparent z-20"></div>
+    <Swiper
+      modules={[Pagination, Autoplay]}
+      loop={true}
+      autoplay={{
+        delay: 3000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      }}
+      pagination={{ el: ".custom-pagination", clickable: true }}
+      spaceBetween={20}
+      centeredSlides={true}
+      slidesPerView={3}
+      breakpoints={{
+        0: { slidesPerView: 1.05, centeredSlides: true, spaceBetween: 12 },
+        640: { slidesPerView: 1.25, centeredSlides: true, spaceBetween: 16 },
+        768: { slidesPerView: 1.5, centeredSlides: true, spaceBetween: 20 },
+        1024: { slidesPerView: 2, centeredSlides: true, spaceBetween: 24 },
+      }}
+      className="py-10 w-full !overflow-visible"
+    >
+      {testimonials.map((item, index) => (
+        <SwiperSlide
+          key={item.id ?? index}
+          className="!w-[85%] sm:!w-[90%] md:!w-[340px] lg:!w-[360px] flex justify-center"
         >
-            <Swiper
-                modules={[Pagination, Autoplay]}
-                loop={true}
-                autoplay={{
-                    delay: 3000,
-                    disableOnInteraction: false,
-                    pauseOnMouseEnter: true,
-                }}
-                pagination={{ el: ".custom-pagination", clickable: true }}
-                spaceBetween={16}
-                centeredSlides={true}
-                breakpoints={{
-                    0: { slidesPerView: 1.05, spaceBetween: 12, centeredSlides: true },
-                    480: { slidesPerView: 1.15, spaceBetween: 14, centeredSlides: true },
-                    640: { slidesPerView: 1.25, spaceBetween: 16, centeredSlides: true },
-                    768: { slidesPerView: 2, spaceBetween: 20, centeredSlides: false },
-                    1024: { slidesPerView: "auto", spaceBetween: 24, centeredSlides: false },
-                }}
-                className="py-10 w-full !overflow-visible"
-            >
-
-                {testimonials.map((item, index) => (
-                    <SwiperSlide
-                        key={item.id ?? index}
-                        className="!w-[85%] sm:!w-[90%] md:!w-[340px] lg:!w-[360px] flex justify-center"
-                    >
-
                         <div className="max-w-md mx-auto relative overflow-visible">
                             {/* card wrapper with hover grow + overlap */}
                             <div className="group relative transform transition-all duration-500 hover:scale-105 hover:z-20">
@@ -102,6 +101,8 @@ export default function TestimonialsCarousel() {
                 <div className="custom-pagination flex justify-center mt-6"></div>
             </Swiper>
         </div>
+        </div>
+
     );
 }
 

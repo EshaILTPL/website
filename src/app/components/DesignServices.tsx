@@ -70,12 +70,12 @@ const ServiceCardsFlip = () => {
 
   return (
     <section ref={sectionRef} className="w-full bg-[#f5f5f5e8] py-1s2 border-black/20 border border-dashed">
-      <div className="max-w-3xl mx-auto text-center border-r-[1.5px] border-l-[1.5px] border-dashed border-black/20">
-      <div className="max-w-3xl mx-auto text-center">
+      <div className="max-w-4xl mx-auto text-center border-r-[1.5px] border-l-[1.5px] border-dashed border-black/20">
+      <div className="max-w-4xl mx-auto text-center">
         <div className="max-w-4xl mx-auto">
           <div className="w-1/2 max-w-sm mx-auto mb-4 mt-4">
             <h2 className="text-2xl md:text-md subheader-text font-bold mb-4 text-black">
-              What's holding you back from choosing us, considering we&apos;ve already addressed these issues?
+              What&apos;s holding you back from choosing us, considering we&apos;ve already addressed these issues?
             </h2>
           </div>
         </div>

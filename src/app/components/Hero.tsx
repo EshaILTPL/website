@@ -1,28 +1,32 @@
 "use client";
 import React from "react";
-import { ReactTyped } from "react-typed";
+import { motion } from "framer-motion";
 import { Clock, Lock, Infinity } from "lucide-react";
+import { ReactTyped } from "react-typed";
+
 
 export default function Hero() {
 
     return (
         <div className="border-dashed border-b-[1.5px] border-black/20">
             <header className="header-hero border-b-[1.5px] border-dashed border-black/20">
-                <div className="content relative pt-32 pb-16 text-center max-w-3xl mx-auto px-6 border-dashed border-l-[1.5px] border-r-[1.5px] border-black/20"
+                <div className="content relative pt-32 pb-16 text-center max-w-4xl mx-auto px-6 border-dashed border-l-[1.5px] border-r-[1.5px] border-black/20"
                     style={{ marginTop: '4%' }} >
                     {/* Status */}
-                    <style jsx>{`
-  @keyframes glow {
-    0%, 100% {
-      box-shadow: 0 0 0px #22c55e;
-      opacity: 0.8;
-    }
-    50% {
-      box-shadow: 0 0 8px 4px #22c55e;
-      opacity: 1;
-    }
-  }
-                `}</style>
+                    <style jsx>
+                        {`
+                            @keyframes glow {
+                                0%, 100% {
+                                box-shadow: 0 0 0px #22c55e;
+                                opacity: 0.8;
+                                }
+                                50% {
+                                box-shadow: 0 0 8px 4px #22c55e;
+                                opacity: 1;
+                                }
+                            }
+                        `}
+                    </style>
                     <div className="flex items-center justify-center space-x-2 mb-4">
                         <span
                             className="w-2 h-2 rounded-full bg-green-500 animate-[glow_1.5s_ease-in-out_infinite]"
@@ -34,24 +38,30 @@ export default function Hero() {
                             Available for New Projects
                         </span>
                     </div>
-                    {/* Headline */}
-                    <h1 className="text-3xl md:text-5xl font-extrabold leading-tight max-w-3xl mx-auto header-text text-black">
-                        A DEDICATED DESIGN TEAM <br />
-                        FOR{" "}
-                        <ReactTyped
-                            strings={["Startups", "Sales Leaders", "Founders"]}
-                            typeSpeed={80}
-                            backSpeed={50}
-                            backDelay={1500}
-                            loop
-                            className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400"
-                        />
-                    </h1>
+                    {/* Heading + Subheading */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
+                        <h1 className="text-3xl md:text-5xl font-extrabold leading-tight max-w-3xl mx-auto header-text text-black">
+                            A DEDICATED DESIGN TEAM <br />
+                            FOR{" "}
+                            <ReactTyped
+                                strings={["Startups", "Sales Leaders", "Founders"]}
+                                typeSpeed={80}
+                                backSpeed={50}
+                                backDelay={1500}
+                                loop
+                                className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400"
+                            />
+                        </h1>
 
-                    {/* Subheadline */}
-                    <p className="mt-4 text-black text-base text-xs normal-text">
-                        We don&apos;t just design, we solve your brand&apos;s biggest challenges
-                    </p>
+                        <p className="mt-4 text-black text-base text-xs normal-text">
+                            We don&apos;t just design, we solve your brand&apos;s biggest challenges
+                        </p>
+                    </motion.div>
 
                     {/* Button */}
                     <div className="mt-8">
@@ -78,8 +88,13 @@ export default function Hero() {
 
                 </div>
             </header>
-            <div className="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 border-dashed border-r-[1.5px] border-l-[1.5px] border-black/20 gap-6 px-4 py-4 md:px-6">
-
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+                viewport={{ once: true, amount: 0.4 }}
+                className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 border-dashed border-r-[1.5px] border-l-[1.5px] border-black/20 gap-6 px-4 py-4 md:px-6"
+            >
                 {/* Item 1 */}
                 <div className="sm:border-r border-dashed border-black/20 flex items-center gap-4">
                     <div className="bg-gray-300 p-3 rounded-xl flex items-center justify-center">
@@ -103,8 +118,7 @@ export default function Hero() {
                     </div>
                     <h3 style={{ fontWeight: "500" }} className="normal-text text-xs text-black">Unlimited Design Requests</h3>
                 </div>
-
-            </div>
+            </motion.div>
         </div>
     );
 }

@@ -36,7 +36,7 @@ export default function StepsWithVideo() {
 
   return (
     <section className="border-dashed border-b-[1.5px] border-black/20 flex justify-center">
-      <div className="max-w-3xl mx-auto border-dashed border-r-[1.5px] border-l-[1.5px] border-black/20">
+      <div className="max-w-4xl mx-auto border-dashed border-r-[1.5px] border-l-[1.5px] border-black/20">
         {/* Heading */}
         <div className="w-1/2 max-w-sm mx-auto mb-14">
           <div className="text-center">
@@ -51,24 +51,37 @@ export default function StepsWithVideo() {
         </div>
 
         {/* Content Grid */}
-        <div className="py-2 px-4 grid md:grid-cols-2 gap-10 items-center">
+        {/* <div className="py-2 px-4 grid md:grid-cols-2 gap-10 items-center"> */}
+        <motion.div
+  className="py-2 px-4 grid md:grid-cols-2 gap-10 items-center"
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  viewport={{ once: true, amount: 0.5 }}
+>
           {/* LEFT: Video */}
-          <div className="relative rounded-2xl overflow-hidden shadow-lg">
-            <AnimatePresence mode="wait">
-              <motion.video
-                key={steps[activeStep].id}
-                src={steps[activeStep].video}
-                autoPlay
-                loop
-                muted
-                className="w-full h-[320px] object-cover rounded-2xl"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.5 }}
-              />
-            </AnimatePresence>
-          </div>
+          {/* LEFT: Video */}
+<div
+  className="relative rounded-2xl overflow-hidden shadow-lg"
+  style={{ height: "100%" }} // make it fill the grid row height
+>
+  <AnimatePresence mode="wait">
+    <motion.video
+      key={steps[activeStep].id}
+      id={`video-${activeStep}`}
+      src={steps[activeStep].video}
+      autoPlay
+      loop
+      muted
+      className="w-full h-full object-cover rounded-2xl"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.5 }}
+    />
+  </AnimatePresence>
+</div>
+
 
           {/* RIGHT: Steps */}
           <div className="space-y-6">
@@ -93,13 +106,13 @@ export default function StepsWithVideo() {
                 onMouseEnter={() => {
                   setActiveStep(i);
                   const video = document.getElementById(`video-${i}`);
-                  if (video) video.play();
+                  if (video) (video as HTMLVideoElement).play();
                 }}
                 onMouseLeave={() => {
                   const video = document.getElementById(`video-${i}`);
                   if (video) {
-                    video.pause();
-                    video.currentTime = 0; // optional: restart
+                    (video as HTMLVideoElement).pause();
+                    (video as HTMLVideoElement).currentTime = 0; // optional: restart
                   }
                 }}
               >
@@ -113,9 +126,12 @@ export default function StepsWithVideo() {
               </motion.div>
             ))}
           </div>
-        </div>
-      </div>
-    </section>
+        {/* </div> */}
+      </motion.div>
+   
+   </div>
+   </section>
+
 
 
   );

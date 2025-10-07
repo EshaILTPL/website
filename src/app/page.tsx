@@ -1,7 +1,4 @@
 "use client";
-
-import { Clock, Lock, Infinity } from "lucide-react";
-import AchievementCards from "./components/AchievementCards";
 import FeaturesSection from "./components/FeaturesSection";
 import Gallery from "./components/Gallery";
 import Hero from "./components/Hero";
@@ -13,17 +10,17 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import ServiceCards from "./components/DesignServices";
 import FaqSection from "./components/FaqSection";
 
-// import { CheckCircle, Clock, Lock, Infinity } from "lucide-react";
-
 export default function HeaderSection() {
 
   return (
-    <div className="">
+    <div>
       {/* Navbar */}
       <nav className="fixed top-0 left-0 w-full z-50 bg-white/30 backdrop-blur-md border-dashed border-b-[1.5px] border-black/20">
-        <div className="max-w-3xl mx-auto flex items-center justify-between px-6 py-2 border-dashed border-l-[1.5px] border-r-[1.5px] border-black/20">
+        <div className="max-w-4xl mx-auto flex items-center justify-between px-6 py-2 border-dashed border-l-[1.5px] border-r-[1.5px] border-black/20">
           {/* Logo */}
-          <div className="font-extrabold text-2xl text-black">kree8</div>
+          <div style={{width: "40%"}} className="flex-shrink-0">
+            <img style={{width: "40%"}} src="img/InspringLogo-Transparent.png" loading="lazy"  alt="company-logo" className="image" />
+          </div>
 
           {/* Nav + CTA grouped together */}
           <div className="flex items-center space-x-6">
@@ -39,8 +36,6 @@ export default function HeaderSection() {
                     href={item.href}
                     className="text-xs text-gray-500 transition-all duration-300 group-hover:text-black group-hover:-translate-y-1 inline-block"
                   >
-                    {/* ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK8QpFCT2v+lTOrPC6PscCz+nLPpbYXPAIGsB4V/gb0h esha@iltpl.com
- */}
                     {item.label}
                     {/* Black dot */}
                     <span className="absolute left-1/2 bottom-[-6px] w-1.5 h-1.5 rounded-full bg-black scale-0 group-hover:scale-100 transition-transform duration-300 -translate-x-1/2"></span>

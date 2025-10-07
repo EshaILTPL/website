@@ -85,26 +85,26 @@ const WhyChooseUs: React.FC = () => {
     return (
         <section
             ref={sectionRef}
-            id="why-choose-us"
+            id="comparison"
             className="w-full bg-[#f5f5f5e8] py-12d border-t-[1.5px] border-dashed border-black/20">
-            <div className="max-w-3xl mx-auto px-6 text-center text-black border-r-[1.5px] border-l-[1.5px] border-dashed border-black/20">
-                           <div className="max-w-3xl mx-auto px-6 py-6">
-                <div className="max-w-6xl mx-auto">
-                    {/* Header Section */}
-                    <div className="max-w-4xl mx-auto">
-                        <div className="w-1/2 max-w-sm mx-auto mb-10">
-                            <h2 className="text-2xl md:text-md subheader-text font-bold mb-4">
-                                Why choose us?
-                            </h2>
-                            <div className="text-xs normal-text text-black max-sm mx-auto">
-                                <p>Check out what Kreed offers Vs employees and other agencies. It&apos;s quite a lot!</p>
+            <div className="max-w-4xl mx-auto px-6 text-center text-black border-r-[1.5px] border-l-[1.5px] border-dashed border-black/20">
+                <div className="max-w-4xl mx-auto px-6 py-6">
+                    <div className="max-w-6xl mx-auto">
+                        {/* Header Section */}
+                        <div className="max-w-4xl mx-auto">
+                            <div className="w-1/2 max-w-sm mx-auto mb-10">
+                                <h2 className="text-2xl md:text-md subheader-text font-bold mb-4">
+                                    Why choose us?
+                                </h2>
+                                <div className="text-xs normal-text text-black max-sm mx-auto">
+                                    <p>Check out what Kreed offers Vs employees and other agencies. It&apos;s quite a lot!</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    {/* Comparison Table */}
-                    <div className="overflow-x-auto bg-white rounded-3xl shadow-lg py-2 px-2">
+                        {/* Comparison Table */}
+                        <div className="overflow-x-auto bg-white rounded-3xl shadow-lg py-2 px-2">
 
-                        {/* <div className="overflow-x-auto bg-white rounded-3xl shadow-lg"> */}
+                            {/* <div className="overflow-x-auto bg-white rounded-3xl shadow-lg"> */}
                             <table className="w-full border-collapse rounded-3xl">
                                 {/* Table Header */}
                                 <thead>
@@ -157,14 +157,14 @@ const WhyChooseUs: React.FC = () => {
                                     ))}
                                 </tbody>
                             </table>
-                        {/* </div> */}
-                    </div>
+                            {/* </div> */}
+                        </div>
 
-                    {/* Footer Note */}
-                    <p className="text-black border-t border-gray-300 border-dashed text-sm normal-text mt-5">
-                        And here&apos;s come the <span style={{ fontWeight: "500" }} className="font-bold normal-text text-black text-lg">Sauce...</span>
-                    </p>
-                </div>
+                        {/* Footer Note */}
+                        <p className="text-black border-t border-gray-300 border-dashed text-sm normal-text mt-5">
+                            And here&apos;s come the <span style={{ fontWeight: "500" }} className="font-bold normal-text text-black text-lg">Sauce...</span>
+                        </p>
+                    </div>
                 </div>
 
             </div>
