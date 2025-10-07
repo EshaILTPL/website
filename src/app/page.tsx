@@ -9,6 +9,7 @@ import ServicesSection from "./components/ServicesSection";
 import WhyChooseUs from "./components/WhyChooseUs";
 import ServiceCards from "./components/DesignServices";
 import FaqSection from "./components/FaqSection";
+import Price from "./components/Price";
 
 export default function HeaderSection() {
 
@@ -75,11 +76,11 @@ export default function HeaderSection() {
       <TestimonialCard />
       <LogoCarousel />
        <FeaturesSection />
-       {/*giving mobile screen right side extra space */}
        <StepsWithVideo />
       <ServicesSection />
       <Gallery />
       <WhyChooseUs /> 
+      <Price />
       <ServiceCards/>
       <FaqSection />
       {/* <AchievementCards /> */}
