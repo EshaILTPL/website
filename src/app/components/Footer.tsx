@@ -4,10 +4,10 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <div className="bottom-0 left-0 w-full z-50 bg-white/30 backdrop-blur-md border-dashed border-b-[1.5px] border-black/20">
-      <div className="max-w-4xl mx-auto flex items-center justify-between px-6 py-2 border-dashed border-l-[1.5px] border-r-[1.5px] border-black/20">
+      <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-2 border-dashed border-l-[1.5px] border-r-[1.5px] border-black/20">
         <footer className="w-full flex items-center justify-between py-4 text-black">
           {/* Copyright */}
-          <p className="text-xs text-gray-600">
+          <p className="text-sm text-gray-600">
             © 2025 InspiringLife All rights reserved
           </p>
 

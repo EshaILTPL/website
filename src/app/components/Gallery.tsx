@@ -18,10 +18,10 @@ const images: GalleryImage[] = [
 export default function Gallery() {
   return (
     <section id="work" className="w-full bg-[#f5f5f5e8] py-12">
-      <div className="max-w-4xl mx-auto px-6 text-center border-black/20 border-r-[1.5px] border-l-[1.5px] border-dashed">
+      <div className="max-w-6xl mx-auto px-6 text-center border-black/20 border-r-[1.5px] border-l-[1.5px] border-dashed">
         <div className="border-black/20 border-b-[1.5px] border-dashed mb-4">
           <div className="w-1/2 max-w-sm mx-auto mb-4">
-            <h2 className="text-black text-xs normal-text mt-2">
+            <h2 className="text-black text-sm normal-text mt-2">
               Still confused about us
             </h2>
             <div className="text-3xl text-black md:text-md subheader-text font-bold mb-4">
@@ -49,7 +49,7 @@ export default function Gallery() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500" />
 
                 <div className="absolute bottom-6 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transform translate-y-6 group-hover:translate-y-0 transition duration-500">
-                  <button className="px-6 py-2 bg-white text-black text-xs rounded-full shadow hover:bg-gray-100">
+                  <button className="px-6 py-2 bg-white text-black text-sm rounded-full shadow hover:bg-gray-100">
                     View Project
                   </button>
                 </div>

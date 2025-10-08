@@ -47,8 +47,8 @@ const features = [
 export default function FeaturesSection() {
   return (
     <section className="w-full bg-[#f5f5f5e8] py-1f2">
-      <div className="max-w-4xl mx-auto px-6 text-center text-black border-r-[1.5px] border-l-[1.5px] border-dashed border-black/20">
-        <div className="max-w-4xl mx-auto px-6 py-6">
+      <div className="max-w-6xl mx-auto px-6 text-center text-black border-r-[1.5px] border-l-[1.5px] border-dashed border-black/20">
+        <div className="max-w-6xl mx-auto px-6 py-6">
           <div className="max-w-6xl mx-auto">
             {/* Header Section */}
             <div className="max-w-4xl mx-auto">
@@ -56,7 +56,7 @@ export default function FeaturesSection() {
                 <h2 className="text-2xl md:text-md subheader-text font-bold mb-4">
                   Benefit of InspiringLife
                 </h2>
-                <div className="text-xs normal-text text-black">
+                <div className="text-sm normal-text text-black">
                   <p>We do things a little differently, here&apos;s a quick overview of just a</p>
                   <p>few of Stack Coworking&apos;s unique offerings.</p>
                 </div>
@@ -102,7 +102,7 @@ export default function FeaturesSection() {
                     <h3 className="text-sm subheader-text font-semibold mb-2">
                       {feature.title}
                     </h3>
-                    <p className="text-black text-xs normal-text">{feature.desc}</p>
+                    <p className="text-black text-sm normal-text">{feature.desc}</p>
                   </motion.div>
                 );
               })}
@@ -115,7 +115,7 @@ export default function FeaturesSection() {
                 >
                   <a
                     href="#pricing"
-                    className="relative inline-flex items-center normal-text justify-center text-white text-xs font-small px-3 py-3 rounded-full min-w-[50px] transition-all duration-500 overflow-hidden group"
+                    className="relative inline-flex items-center normal-text justify-center text-white text-sm font-small px-3 py-3 rounded-full min-w-[50px] transition-all duration-500 overflow-hidden group"
                   >
                     {/* Default text */}
                     <span className="transform transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-xl group-hover:shadow-gray-400 group-hover:opacity-0">

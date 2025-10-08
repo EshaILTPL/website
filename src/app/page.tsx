@@ -19,7 +19,7 @@ export default function HeaderSection() {
     <div>
       {/* Navbar */}
       <nav className="fixed top-0 left-0 w-full z-50 bg-white/30 backdrop-blur-md border-dashed border-b-[1.5px] border-black/20">
-        <div className="max-w-4xl mx-auto flex items-center justify-between px-6 py-2 border-dashed border-l-[1.5px] border-r-[1.5px] border-black/20">
+        <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-2 border-dashed border-l-[1.5px] border-r-[1.5px] border-black/20">
           {/* Logo */}
           <div style={{ width: "40%" }} className="flex-shrink-0">
             <img style={{ width: "40%" }} src="img/InspringLogo-Transparent.png" loading="lazy" alt="company-logo" className="image" />
@@ -37,7 +37,7 @@ export default function HeaderSection() {
                 <li key={i} className="relative group">
                   <a
                     href={item.href}
-                    className="text-xs text-gray-500 transition-all duration-300 group-hover:text-black group-hover:-translate-y-1 inline-block"
+                    className="text-sm text-gray-500 transition-all duration-300 group-hover:text-black group-hover:-translate-y-1 inline-block"
                   >
                     {item.label}
                     {/* Black dot */}
@@ -51,7 +51,7 @@ export default function HeaderSection() {
             <button className="price-button-bg shadow-xl text-white psx-10 pys-3 rounded-full transition-all duration-300 relative overflow-hidden min-w-[50px]" style={{ letterSpacing: "-0.04em" }}>
               <a
                 href="#pricing"
-                className="relative shadow-xl shadow-black/20 inline-flex items-center justify-center text-xs font-small px-3 py-3 rounded-full min-w-[50px] transition-all duration-500 overflow-hidden group text-white  normal-text"
+                className="relative shadow-xl shadow-black/20 inline-flex items-center justify-center text-sm font-small px-3 py-3 rounded-full min-w-[50px] transition-all duration-500 overflow-hidden group text-white  normal-text"
                 style={{
                   letterSpacing: "-0.03em",
                   // backgroundColor: "#E3767B",

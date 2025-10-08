@@ -36,7 +36,7 @@ export default function StepsWithVideo() {
 
   return (
     <section className="border-dashed border-b-[1.5px] border-black/20 flex justify-center">
-      <div className="max-w-4xl mx-auto border-dashed border-r-[1.5px] border-l-[1.5px] border-black/20">
+      <div className="max-w-6xl mx-auto border-dashed border-r-[1.5px] border-l-[1.5px] border-black/20">
         {/* Heading */}
         <div className="w-1/2 max-w-sm mx-auto mb-14">
           <div className="text-center">

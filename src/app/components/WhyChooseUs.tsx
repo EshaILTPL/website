@@ -87,8 +87,8 @@ const WhyChooseUs: React.FC = () => {
             ref={sectionRef}
             id="comparison"
             className="w-full bg-[#f5f5f5e8] py-12d border-t-[1.5px] border-dashed border-black/20">
-            <div className="max-w-4xl mx-auto px-6 text-center text-black border-r-[1.5px] border-l-[1.5px] border-dashed border-black/20">
-                <div className="max-w-4xl mx-auto px-6 py-6">
+            <div className="max-w-6xl mx-auto px-6 text-center text-black border-r-[1.5px] border-l-[1.5px] border-dashed border-black/20">
+                <div className="max-w-6xl mx-auto px-6 py-6">
                     <div className="max-w-6xl mx-auto">
                         {/* Header Section */}
                         <div className="max-w-4xl mx-auto">
@@ -96,7 +96,7 @@ const WhyChooseUs: React.FC = () => {
                                 <h2 className="text-2xl md:text-md subheader-text font-bold mb-4">
                                     Why choose us?
                                 </h2>
-                                <div className="text-xs normal-text text-black max-sm mx-auto">
+                                <div className="text-sm normal-text text-black max-sm mx-auto">
                                     <p>Check out what Kreed offers Vs employees and other agencies. It&apos;s quite a lot!</p>
                                 </div>
                             </div>
@@ -141,16 +141,16 @@ const WhyChooseUs: React.FC = () => {
                                                 transitionDelay: isVisible ? `${index * 100}ms` : '0ms'
                                             }}
                                         >
-                                            <td className="p-4 text-left text-black bg-gray-50 normal-text text-xs">
+                                            <td className="p-4 text-left text-black bg-gray-50 normal-text text-sm">
                                                 {row.feature}
                                             </td>
-                                            <td className="p-4 text-left text-black bg-white normal-text text-xs">
+                                            <td className="p-4 text-left text-black bg-white normal-text text-sm">
                                                 {row.InspiringLife}
                                             </td>
-                                            <td className="p-4 text-left text-black bg-white normal-text text-xs">
+                                            <td className="p-4 text-left text-black bg-white normal-text text-sm">
                                                 {row.employees}
                                             </td>
-                                            <td className="p-4 text-left text-black bg-white normal-text text-xs">
+                                            <td className="p-4 text-left text-black bg-white normal-text text-sm">
                                                 {row.otherAgencies}
                                             </td>
                                         </tr>

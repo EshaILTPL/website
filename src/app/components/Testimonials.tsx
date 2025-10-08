@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 export default function TestimonialsCarousel() {
     return (
         <div id="achievements" style={{ backgroundColor: "#f5f5f5e8" }} className="relative w-full flex justify-center px-2 py-10 sm:py-10 md:px-10 sm:px-6 md:px-8">
-            <div className="relative w-full max-w-4xl overflow-hidden">
+            <div className="relative w-full max-w-3xl overflow-hidden">
                 {/* Fade edges */}
                 <div className="pointer-events-none absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-[#f5f5f5e8] to-transparent z-20"></div>
                 <div className="pointer-events-none absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-[#f5f5f5e8] to-transparent z-20"></div>
@@ -24,7 +24,7 @@ export default function TestimonialsCarousel() {
                     pagination={{ el: ".custom-pagination", clickable: true }}
                     spaceBetween={20}
                     centeredSlides={true}
-                    slidesPerView={2.5}
+                    slidesPerView={3}
                     breakpoints={{
                         0: { slidesPerView: 1.05, centeredSlides: true, spaceBetween: 12 },
                         640: { slidesPerView: 1.25, centeredSlides: true, spaceBetween: 16 },
@@ -61,7 +61,7 @@ export default function TestimonialsCarousel() {
                                         </div>
                                         {/* Quote */}
                                         <div className="px-6">
-                                            <div className="px-6 py-4 rounded-tl-2xl rounded-tr-2xl rounded-br-2xl bg-gray-100 text-gray-600 text-xs leading-relaxed normal-text justify-start max-w-[80%]">
+                                            <div className="px-6 py-4 rounded-tl-2xl rounded-tr-2xl rounded-br-2xl bg-gray-100 text-gray-600 text-sm leading-relaxed normal-text justify-start max-w-[80%]">
                                                 <p>{item.quote}</p>
                                                 <p className="mt-2 font-semibold text-gray-800">{item.author}</p>
                                             </div></div>
@@ -73,7 +73,7 @@ export default function TestimonialsCarousel() {
                                                     <div className="px-4 py-2 rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl bg-gray-300 text-gray-700 text-sm transition-colors duration-300 group-hover:bg-black group-hover:text-white">
                                                         {item.reply.text}
                                                         {item.reply.from && (
-                                                            <span className="ml-2 text-xs font-normal">{item.reply.from}</span>
+                                                            <span className="ml-2 text-sm font-normal">{item.reply.from}</span>
                                                         )}
                                                     </div>
                                                 </div>
@@ -90,7 +90,7 @@ export default function TestimonialsCarousel() {
                                             />
                                             <div>
                                                 <p className="text-sm font-semibold text-gray-800">{item.author}</p>
-                                                {item.role && <p className="text-xs text-gray-500">{item.role}</p>}
+                                                {item.role && <p className="text-sm text-gray-500">{item.role}</p>}
                                             </div>
                                         </div>
                                     </div>

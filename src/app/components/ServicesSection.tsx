@@ -18,19 +18,19 @@ export default function ServicesSection() {
 
   return (
     <section className="w-full bg-[#f5f5f5e8] py-12 border-black/20 border border-dashed">
-      <div className="max-w-4xl mx-auto px-6 text-center border-r-[1.5px] border-l-[1.5px] border-dashed border-black/20">
+      <div className="max-w-6xl mx-auto px-6 text-center border-r-[1.5px] border-l-[1.5px] border-dashed border-black/20">
         <div className="max-w-4xl mx-auto">
           <div className="w-1/2 max-w-sm mx-auto mb-4">
             <h2 className="text-2xl md:text-md subheader-text font-bold mb-4 text-black">
               We are here to Serve...
             </h2>
-            <div className="text-xs normal-text text-black max-sm mx-auto">
+            <div className="text-sm normal-text text-black max-sm mx-auto">
               <p>Stop stressing yourself in finding out the perfect person for a particular design needs</p>
             </div>
           </div>
         </div>
 
-        <p className="text-black text-xs normal-text border-t-[1.5px] border-dashed border-black/20 pt-4 mb-4">
+        <p className="text-black text-sm normal-text border-t-[1.5px] border-dashed border-black/20 pt-4 mb-4">
           Tip: Hover on the images
         </p>
 
@@ -69,7 +69,7 @@ export default function ServicesSection() {
         </div>
       </div>
 
-      <h3 className="mt-3 text-gray-600 text-xs normal-text text-center">{service.title}</h3>
+      <h3 className="mt-3 text-gray-600 text-sm normal-text text-center">{service.title}</h3>
 
       {/* Hover Tooltip */}
       {hovered?.index === i && (
@@ -86,7 +86,7 @@ export default function ServicesSection() {
 </div>
 
 
-        <p className="text-gray-600 border-t-[1.5px] border-black/20 border-dashed text-xs normal-text mt-5">
+        <p className="text-gray-600 border-t-[1.5px] border-black/20 border-dashed text-sm normal-text mt-5">
           That’s not it we do even{" "}
           <span style={{ fontWeight: "500" }} className="font-bold normal-text text-black text-lg">
             More...

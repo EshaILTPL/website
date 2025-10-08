@@ -71,8 +71,8 @@ const ServiceCardsFlip = () => {
 
   return (
     <section ref={sectionRef} className="w-full bg-[#f5f5f5e8] py-1s2 border-black/20 border border-dashed">
-      <div className="max-w-4xl mx-auto text-center border-r-[1.5px] border-l-[1.5px] border-dashed border-black/20">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto text-center border-r-[1.5px] border-l-[1.5px] border-dashed border-black/20">
+      <div className="max-w-6xl mx-auto text-center">
         <div className="max-w-4xl mx-auto">
           <div className="w-1/2 max-w-sm mx-auto mb-4 mt-4">
             <h2 className="text-2xl md:text-md subheader-text font-bold mb-4 text-black">
@@ -99,14 +99,14 @@ const ServiceCardsFlip = () => {
               {card.id}. {card.title}
             </h3>
             <div className="bg-gray-100 mb-2 p-2 rounded-full flex items-center justify-center">
-              <span className="text-black text-xs">Problem</span>
+              <span className="text-black text-sm">Problem</span>
             </div>
             <div className="flex-1 overflow-hidden">
-              <p className="text-gray-700 normal-text text-xs leading-relaxed px-2 py-2">
+              <p className="text-gray-700 normal-text text-sm leading-relaxed px-2 py-2">
                 {card.problem.substring(0, 100)}...
               </p>
             </div>
-            <div className="mt-3 text-gray-400 text-xs pt-2 mb-2 flex items-center justify-center">
+            <div className="mt-3 text-gray-400 text-sm pt-2 mb-2 flex items-center justify-center">
               Hover to flip
             </div>
           </div>
@@ -116,9 +116,9 @@ const ServiceCardsFlip = () => {
         <div className="absolute inset-0 h-full w-full rounded-4xl bg-black border-[1.5px] border-dashed border-black/20 p-4 text-black [backface-visibility:hidden] overflow-hidden [transform:rotateY(180deg)]">
           <div className="flex flex-col h-full text-left">
             <div className="bg-gray-900 p-2 rounded-full flex items-center justify-center">
-              <span className="text-gray-500 text-xs">Solution</span>
+              <span className="text-gray-500 text-sm">Solution</span>
             </div>
-            <p className="text-gray-200 leading-relaxed px-2 mt-4 text-xs">
+            <p className="text-gray-200 leading-relaxed px-2 mt-4 text-sm">
               {card.solution}
             </p>
           </div>

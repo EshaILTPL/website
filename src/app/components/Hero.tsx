@@ -10,7 +10,7 @@ export default function Hero() {
     return (
         <div className="border-dashed border-b-[1.5px] border-black/20">
             <header className="header-hero border-b-[1.5px] border-dashed border-black/20">
-                <div className="content relative pt-32 pb-16 text-center max-w-4xl mx-auto px-6 border-dashed border-l-[1.5px] border-r-[1.5px] border-black/20"
+                <div className="content relative pt-32 pb-16 text-center max-w-6xl mx-auto px-6 border-dashed border-l-[1.5px] border-r-[1.5px] border-black/20"
                     style={{ marginTop: '4%' }} >
                     {/* Status */}
                     <style jsx>
@@ -58,7 +58,7 @@ export default function Hero() {
                             />
                         </h1>
 
-                        <p className="mt-4 text-black text-base text-xs normal-text">
+                        <p className="mt-4 text-black text-base text-sm normal-text">
                             We don&apos;t just design, we solve your brand&apos;s biggest challenges
                         </p>
                     </motion.div>
@@ -70,7 +70,7 @@ export default function Hero() {
                         >
                             <a
                                 href="#pricing"
-                                className="relative inline-flex items-center normal-text justify-center text-white text-xs font-small px-3 py-3 rounded-full min-w-[50px] transition-all duration-500 overflow-hidden group"
+                                className="relative inline-flex items-center normal-text justify-center text-white text-sm font-small px-3 py-3 rounded-full min-w-[50px] transition-all duration-500 overflow-hidden group"
                             >
                                 {/* Default text */}
                                 <span className="transform transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-xl group-hover:shadow-gray-400 group-hover:opacity-0">
@@ -93,14 +93,14 @@ export default function Hero() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
                 viewport={{ once: true, amount: 0.4 }}
-                className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 border-dashed border-r-[1.5px] border-l-[1.5px] border-black/20 gap-6 px-4 py-4 md:px-6"
+                className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 border-dashed border-r-[1.5px] border-l-[1.5px] border-black/20 gap-6 px-4 py-4 md:px-6"
             >
                 {/* Item 1 */}
                 <div className="sm:border-r border-dashed border-black/20 flex items-center gap-4">
                     <div className="bg-gray-300 p-3 rounded-xl flex items-center justify-center">
                         <Clock className="w-4 h-4 text-black animate-spin-slow" />
                     </div>
-                    <h3 style={{ fontWeight: "500" }} className="normal-text text-xs text-black">48 Hours Delivery</h3>
+                    <h3 style={{ fontWeight: "500" }} className="normal-text text-sm text-black">48 Hours Delivery</h3>
                 </div>
 
                 {/* Item 2 */}
@@ -108,7 +108,7 @@ export default function Hero() {
                     <div className="bg-gray-300 p-3 rounded-xl flex items-center justify-center">
                         <Lock className="w-4 h-4 text-black animate-bounce" />
                     </div>
-                    <h3 style={{ fontWeight: "500" }} className="normal-text text-xs text-black">Access to Private Design Portal</h3>
+                    <h3 style={{ fontWeight: "500" }} className="normal-text text-sm text-black">Access to Private Design Portal</h3>
                 </div>
 
                 {/* Item 3 */}
@@ -116,7 +116,7 @@ export default function Hero() {
                     <div className="bg-gray-300 p-3 rounded-xl flex items-center justify-center">
                         <Infinity className="w-4 h-4 text-black animate-pulse-slow" />
                     </div>
-                    <h3 style={{ fontWeight: "500" }} className="normal-text text-xs text-black">Unlimited Design Requests</h3>
+                    <h3 style={{ fontWeight: "500" }} className="normal-text text-sm text-black">Unlimited Design Requests</h3>
                 </div>
             </motion.div>
         </div>
