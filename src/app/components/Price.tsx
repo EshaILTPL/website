@@ -28,106 +28,115 @@ const Price = () => {
                         <div className="grid md:grid-cols-2 gap-8">
                             {/* First Card */}
                             <motion.div
-                                className={`relative p-6 rounded-4xl shadow-xl border transition-all duration-500
+                                className={`relative p-1 rounded-4xl shadow-xl border transition-all duration-500
           ${toggled ? "bg-black border-gray-800" : "bg-black"}`}
                                 initial={{ opacity: 0, y: 40 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                             >
-                                {/* Top-right icon */}
-                                <div className="absolute top-4 left-4">
-                                    {toggled ? (
-                                        <Star className="w-6 h-6 text-green-500 tex-xs animate-bounce" />
-                                    ) : (
-                                        <CheckCircle className="w-6 h-6 text-gray-400 animate-rotate" />
-                                    )}
-                                </div>
-
-                                {/* Header + Toggle */}
-                                <div className="flex justify-between items-center mb-4 mt-6">
-                                    <h2 className={'text-xl font-bold'}>
+                                <div className="p-2 mb-2 rounded-4xl shadow-xl border transition-all duration-500 bg-white/10" style={{
+                                    borderColor: "rgba(255, 255, 255, 0.1)",
+                                    borderLeftWidth: "1px",
+                                    borderRightWidth: "1px",
+                                    borderStyle: "solid",
+                                    borderTopWidth: "1px",
+                                    borderRadius: "32px",
+                                    opacity: "100%"
+                                }}>
+                                    {/* Top-right icon */}
+                                    <div className="absolute top-4 left-4">
                                         {toggled ? (
-                                            <p className='text-3xl font-medium text-white'>Retainer Boost</p>
+                                            <Star className="w-6 h-6 text-green-500 tex-xs animate-bounce" />
                                         ) : (
-                                            <p className='text-3xl font-medium text-white'>Retainer</p>
+                                            <CheckCircle className="w-6 h-6 text-gray-400 animate-rotate" />
                                         )}
-                                    </h2>
-                                    <button
-                                        onClick={() => setToggled(!toggled)}
-                                        className={`w-12 h-6 rounded-full transition-colors duration-300
+                                    </div>
+
+                                    {/* Header + Toggle */}
+                                    <div className="flex justify-between items-center mb-4 mt-6">
+                                        <h2 className={'text-xl font-bold'}>
+                                            {toggled ? (
+                                                <p className='text-2xl font-medium text-white'>Retainer Boost</p>
+                                            ) : (
+                                                <p className='text-2xl font-medium text-white'>Retainer</p>
+                                            )}
+                                        </h2>
+                                        <button
+                                            onClick={() => setToggled(!toggled)}
+                                            className={`w-12 h-6 rounded-full transition-colors duration-300
               ${toggled ? "bg-green-500" : "bg-gray-400"}`}
-                                    >
-                                        <div
-                                            className={`w-5 h-5 bg-white rounded-full shadow-md transform transition-transform
+                                        >
+                                            <div
+                                                className={`w-5 h-5 bg-white rounded-full shadow-md transform transition-transform
                 ${toggled ? "translate-x-6" : "translate-x-0"}`}
-                                        ></div>
-                                    </button>
+                                            ></div>
+                                        </button>
+                                    </div>
+
+                                    {/* Middle rounded background section */}
+                                    <div style={{ background: "linear-gradient(179.999997deg, rgba(235, 230, 230, 0.03) 3.563133%, rgba(255, 255, 255, 0.05) 100%)" }} className={`p-2 rounded-2xl mb-4 tex-xs text-white`}>
+                                        <p className="text-xs">
+                                            {toggled
+                                                ? "Best suited for growing companies or agencies that require ongoing and fast design support."
+                                                : "Ideal for ongoing design support with one active request at a time."}
+                                        </p>
+                                    </div>
+                                    {/* Divider */}
+                                    <hr className="border-gray-300 my-4" />
+
+                                    {/* Features */}
+                                    <ul className="space-y-3 mb-6">
+                                        <li className="flex items-start text-xs">
+                                            {toggled ? (
+                                                <> <span className="text-green-500 tex-xs mr-2">•</span>
+                                                    <span className="text-green-700 tex-xs">2 Active request at a time
+                                                    </span>
+                                                </>
+                                            ) : (
+                                                <> <span className="text-green-500 tex-xs mr-2">•</span>
+                                                    <span className="text-gray-400 tex-xs">Wireframes</span>
+                                                </>
+                                            )}
+                                        </li>
+                                        <li className="flex items-start text-xs">
+                                            {toggled ? (<> <span className="text-green-500 tex-xs mr-2">•</span>
+                                                <span className="text-green-700 tex-xs">3X Senior designer
+                                                </span></>) : (
+                                                <> <span className="text-green-500 tex-xs mr-2">•</span>
+                                                    <span className="text-gray-400 tex-xs">Designer</span>
+                                                </>
+                                            )}
+                                        </li>
+                                        <li className="flex items-start text-xs">
+                                            <span className="text-green-500 tex-xs mr-2">•</span>
+                                            <span className="text-gray-400 tex-xs">Desktop, Tablet, Mobile Responsive Design</span>
+                                        </li>
+                                        <li className="flex items-start text-xs">
+                                            <span className="text-green-500 tex-xs mr-2">•</span>
+                                            <span className="text-gray-400 tex-xs">Brand Consistency</span>
+                                        </li>
+                                        <li className="flex items-start text-xs">
+                                            <span className="text-green-500 tex-xs mr-2">•</span>
+                                            <span className="text-gray-400 tex-xs">Figma File</span>
+                                        </li>
+                                        <li className="flex items-start text-xs">
+                                            <span className="text-green-500 tex-xs mr-2">•</span>
+                                            <span className="text-gray-400 tex-xs">Updates every 48 hours</span>
+                                        </li>
+                                        <li className="flex items-start text-xs">
+                                            <span className="text-green-500 tex-xs mr-2">•</span>
+                                            <span className="text-gray-400 tex-xs">2X Revision</span>
+                                        </li>
+                                        <li className="flex items-start text-xs">
+                                            <span className="text-green-500 tex-xs mr-2">•</span>
+                                            <span className="text-gray-400 tex-xs">+$400 For Each Extra Page</span>
+                                        </li>
+                                        <li className="flex items-start text-xs">
+                                            <span className="text-green-500 tex-xs mr-2">•</span>
+                                            <span className="text-gray-400 tex-xs">Website development (Fizmer) +2x</span>
+                                        </li>
+                                    </ul>
                                 </div>
-
-                                {/* Middle rounded background section */}
-                                <div className={`p-4 rounded-2xl mb-6 ${toggled ? "bg-green-50 text-green-600" : "bg-gray-200 text-gray-700 tex-xs"}`}>
-                                    <p className="text-xs">
-                                        {toggled
-                                            ? "You have activated the Retainer plan! Unlimited requests, priority support."
-                                            : "Ideal for ongoing design support with one active request at a time."}
-                                    </p>
-                                </div>
-                                {/* Divider */}
-                                <hr className="border-gray-300 my-4" />
-
-                                {/* Features */}
-                                <ul className="space-y-3 mb-6">
-                                    <li className="flex items-start text-xs">
-                                        {toggled ? (
-                                            <> <span className="text-green-500 tex-xs mr-2">•</span>
-                                                <span className="text-green-700 tex-xs">2 Active request at a time
-                                                </span>
-                                            </>
-                                        ) : (
-                                            <> <span className="text-green-500 tex-xs mr-2">•</span>
-                                                <span className="text-gray-700 tex-xs">Wireframes</span>
-                                            </>
-                                        )}
-                                    </li>
-                                    <li className="flex items-start text-xs">
-                                        {toggled ? (<> <span className="text-green-500 tex-xs mr-2">•</span>
-                                            <span className="text-green-700 tex-xs">3X Senior designer
-                                            </span></>) : (
-                                            <> <span className="text-green-500 tex-xs mr-2">•</span>
-                                                <span className="text-gray-700 tex-xs">Designer</span>
-                                            </>
-                                        )}
-                                    </li>
-                                    <li className="flex items-start text-xs">
-                                        <span className="text-green-500 tex-xs mr-2">•</span>
-                                        <span className="text-gray-700 tex-xs">Desktop, Tablet, Mobile Responsive Design</span>
-                                    </li>
-                                    <li className="flex items-start text-xs">
-                                        <span className="text-green-500 tex-xs mr-2">•</span>
-                                        <span className="text-gray-700 tex-xs">Brand Consistency</span>
-                                    </li>
-                                    <li className="flex items-start text-xs">
-                                        <span className="text-green-500 tex-xs mr-2">•</span>
-                                        <span className="text-gray-700 tex-xs">Figma File</span>
-                                    </li>
-                                    <li className="flex items-start text-xs">
-                                        <span className="text-green-500 tex-xs mr-2">•</span>
-                                        <span className="text-gray-700 tex-xs">Updates every 48 hours</span>
-                                    </li>
-                                    <li className="flex items-start text-xs">
-                                        <span className="text-green-500 tex-xs mr-2">•</span>
-                                        <span className="text-gray-700 tex-xs">2X Revision</span>
-                                    </li>
-                                    <li className="flex items-start text-xs">
-                                        <span className="text-green-500 tex-xs mr-2">•</span>
-                                        <span className="text-gray-700 tex-xs">+$400 For Each Extra Page</span>
-                                    </li>
-                                    <li className="flex items-start text-xs">
-                                        <span className="text-green-500 tex-xs mr-2">•</span>
-                                        <span className="text-gray-700 tex-xs">Website development (Fizmer) +2x</span>
-                                    </li>
-                                </ul>
-
                                 {/* Price */}
                                 <div className="mb-4 flex items-center space-x-2">
                                     {toggled ? (
@@ -141,33 +150,83 @@ const Price = () => {
                                 </div>
 
                                 {/* Bottom Buttons */}
-                                <div className="flex space-x-4 mt-6">
+                                <div className="flex space-x-4 mt-6 py-2 px-2">
                                     {/* Book a Call */}
-                                    <a
-                                        href="#pricing"
-                                        className="flex-1 py-3 rounded-full bg-white text-black text-xs font-light text-center shadow-xl transition-all duration-300 hover:bg-gray-100"
+                                    <button
+                                        style={{
+                                            letterSpacing: "-0.04em",
+                                        }}
+                                        className="price-button-bg flex-1 py-3 rounded-full text-white text-xs font-light text-center shadow-xl transition-all duration-300"
                                     >
-                                        Book a Call
-                                    </a>
+                                        <a
+                                            href="#pricing"
+                                            className="relative inline-flex items-center justify-center text-xs font-small px-5 py-3 min-w-[140px] transition-all duration-500 overflow-hidden group text-white normal-text whitespace-nowrap"
+                                            style={{
+                                                letterSpacing: "-0.03em",
+                                                transform: "translateY(0)",
+                                            }}
+                                            onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-3px)")}
+                                            onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0)")}
+                                        >
+                                            {/* Default text */}
+                                            <span className="transition-all duration-500 group-hover:-translate-y-2 group-hover:opacity-0 inline-block whitespace-nowrap">
+                                                Book a call    </span>
 
+                                            {/* Hover text */}
+                                            <span className="absolute left-1/2 -translate-x-1/2 transition-all duration-500 opacity-0 group-hover:opacity-100 font-light whitespace-nowrap">
+                                                We&apos;ll be there    </span>
+                                        </a>
+                                    </button>
                                     {/* Connect on Telegram */}
-                                    <a
-                                        href="#pricing"
-                                        className="flex-1 py-3 rounded-full bg-white text-black text-xs font-light text-center shadow-xl transition-all duration-300 hover:bg-gray-100"
+                                    <button
+                                        style={{
+                                            letterSpacing: "-0.04em",
+                                            background:
+                                                "linear-gradient(179.999997deg, rgba(235, 230, 230, 0.03) 3.563133%, rgba(255, 255, 255, 0.05) 100%)",
+                                        }}
+                                        className="flex-1 py-3 rounded-full bg-white text-black text-xs font-light text-center shadow-xl transition-all duration-300 border-white/20 border"
                                     >
-                                        Connect on Telegram
-                                    </a>
+                                        <a
+                                            href="#pricing"
+                                            className="relative shadow-xl shadow-black/20 inline-flex items-center justify-center text-xs font-small px-5 py-3 rounded-full min-w-[140px] transition-all duration-500 overflow-hidden group text-white normal-text whitespace-nowrap"
+                                            style={{
+                                                letterSpacing: "-0.03em",
+                                                transform: "translateY(0)",
+                                            }}
+                                            onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-3px)")}
+                                            onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0)")}
+                                        >
+                                            {/* Default text */}
+                                            <span className="transition-all duration-500 group-hover:-translate-y-2 group-hover:opacity-0 inline-block whitespace-nowrap">
+                                                Connect on Telegram
+                                            </span>
+
+                                            {/* Hover text */}
+                                            <span className="absolute left-1/2 -translate-x-1/2 transition-all duration-500 opacity-0 group-hover:opacity-100 font-light whitespace-nowrap">
+                                                This will be a quick chat
+                                            </span>
+                                        </a>
+                                    </button>
                                 </div>
 
                             </motion.div>
 
                             {/* Second Card - Example */}
                             <motion.div
-                                className={`relative p-6 rounded-4xl shadow-xl transition-all bg-white duration-500`}
+                                className={`relative p-1 rounded-4xl shadow-xl transition-all bg-white duration-500`}
                                 initial={{ opacity: 0, y: 40 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                             >
+                                <div className="p-2 mb-2 rounded-4xl border transition-all duration-500 bg-gray-300/10" style={{
+                                    borderColor: "rgba(255, 255, 255, 0.1)",
+                                    borderLeftWidth: "1px",
+                                    borderRightWidth: "1px",
+                                    borderStyle: "solid",
+                                    borderTopWidth: "1px",
+                                    borderRadius: "32px",
+                                    opacity: "100%"
+                                }}>
                                 {/* Top-right icon */}
                                 <div className="absolute top-4 left-4">
                                     {toggledForWhite ? (
@@ -178,21 +237,21 @@ const Price = () => {
                                 </div>
 
                                 {/* Header + Toggle */}
-                                <div className="flex justify-between items-center mb-4 mt-6">
+                                <div className="flex justify-between items-center mb-2 mt-6">
                                     <h2 className={'text-xl font-bold'}>
-                                     {toggledForWhite ? (
-                                           <p className='text-3xl font-medium text-black'>Landing page Design </p>
-                                     ) : (
-                                           <p className='text-3xl font-medium text-black'>Landing page Design + Dev</p>
-                                     )} 
+                                        {toggledForWhite ? (
+                                            <p className='text-2xl font-medium text-black'>Landing page Design </p>
+                                        ) : (
+                                            <p className='text-2xl font-medium text-black'>Landing page Design + Dev</p>
+                                        )}
                                     </h2>
 
                                 </div>
 
                                 {/* Middle rounded background section */}
-                                <div className={`p-4 rounded-2xl mb-6 ${toggledForWhite ? "bg-green-50 text-green-600" : "bg-gray-200 text-gray-700 tex-xs"}`}>
+                                <div className={`p-2 rounded-2xl mb-1 ${toggledForWhite ? "bg-green-50 text-green-600" : "bg-gray-200 text-gray-700 tex-xs"}`}>
                                     <p className="text-xs">
-                                        {toggled
+                                        {toggledForWhite
                                             ? "You have activated the Retainer plan! Unlimited requests, priority support."
                                             : "Ideal for ongoing design support with one active request at a time."}
                                     </p>
@@ -201,7 +260,7 @@ const Price = () => {
                                 <hr className="border-gray-300 my-4" />
 
                                 {/* Features */}
-                                <ul className="space-y-3 mb-6">
+                                <ul className="space-y-3 mb-4">
                                     <li className="flex items-start text-xs">
                                         {toggledForWhite ? (
                                             <> <span className="text-green-500 tex-xs mr-2">•</span>
@@ -253,20 +312,21 @@ const Price = () => {
                                     </li>
                                 </ul>
                                 <div className="flex space-x-2">
-                                <button
-                                    onClick={() => setToggledForWhite(!toggledForWhite)}
-                                    className={`w-12 h-6 rounded-full transition-colors duration-300
+                                    <button
+                                        onClick={() => setToggledForWhite(!toggledForWhite)}
+                                        className={`w-12 h-6 rounded-full transition-colors duration-300
               ${toggledForWhite ? "bg-green-500" : "bg-gray-400"}`}
-                                >
-                                    <div
-                                        className={`w-5 h-5 bg-white rounded-full shadow-md transform transition-transform
+                                    >
+                                        <div
+                                            className={`w-5 h-5 bg-white rounded-full shadow-md transform transition-transform
                 ${toggledForWhite ? "translate-x-6" : "translate-x-0"}`}
-                                    ></div>
-                                </button>
+                                        ></div>
+                                    </button>
                                     <h3 className={'text-xl font-bold'}>Website Development</h3>
                                 </div>
+                                </div>
                                 {/* Price */}
-                                <div className="mb-4 flex items-center space-x-2">
+                                <div className="mb-2 flex items-center space-x-2">
                                     {toggledForWhite ? (
                                         <h3 className="text-xl text-black">$6199</h3>
 
@@ -278,32 +338,66 @@ const Price = () => {
                                 </div>
 
                                 {/* Bottom Buttons */}
-                                <div className="flex space-x-4 mt-6">
+                                 <div className="flex space-x-4 mt-4 py-2 px-2">
                                     {/* Book a Call */}
-                                    <a
-                                        href="#pricing"
-                                        className="flex-1 py-3 rounded-full bg-white text-black text-xs font-light text-center shadow-xl transition-all duration-300 hover:bg-gray-100"
+                                    <button
+                                        style={{
+                                            letterSpacing: "-0.04em",
+                                        }}
+                                        className="price-button-bg flex-1 py-3 rounded-full text-white text-xs font-light text-center shadow-xl transition-all duration-300"
                                     >
-                                        Book a Call
-                                    </a>
+                                        <a
+                                            href="#pricing"
+                                            className="relative inline-flex items-center justify-center text-xs font-small px-5 py-3 min-w-[140px] transition-all duration-500 overflow-hidden group text-white normal-text whitespace-nowrap"
+                                            style={{
+                                                letterSpacing: "-0.03em",
+                                                transform: "translateY(0)",
+                                            }}
+                                            onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-3px)")}
+                                            onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0)")}
+                                        >
+                                            {/* Default text */}
+                                            <span className="transition-all duration-500 group-hover:-translate-y-2 group-hover:opacity-0 inline-block whitespace-nowrap">
+                                                Book a call    </span>
 
+                                            {/* Hover text */}
+                                            <span className="absolute left-1/2 -translate-x-1/2 transition-all duration-500 opacity-0 group-hover:opacity-100 font-light whitespace-nowrap">
+                                                We&apos;ll be there    </span>
+                                        </a>
+                                    </button>
                                     {/* Connect on Telegram */}
-                                    <a
-                                        href="#pricing"
-                                        className="flex-1 py-3 rounded-full bg-white text-black text-xs font-light text-center shadow-xl transition-all duration-300 hover:bg-gray-100"
+                                    <button
+                                        style={{
+                                            letterSpacing: "-0.04em",
+                                            background:
+                                                "linear-gradient(179.999997deg, rgba(235, 230, 230, 0.03) 3.563133%, rgba(255, 255, 255, 0.05) 100%)",
+                                        }}
+                                        className="flex-1 py-3 rounded-full bg-white text-black text-xs font-light text-center shadow-xl transition-all duration-300 border-black border"
                                     >
-                                        Connect on Telegram
-                                    </a>
+                                        <a
+                                            href="#pricing"
+                                            className="relative shadow-black/20 inline-flex items-center justify-center text-xs font-small px-5 py-3 min-w-[140px] transition-all duration-500 overflow-hidden group text-black normal-text whitespace-nowrap"
+                                            style={{
+                                                letterSpacing: "-0.03em",
+                                                transform: "translateY(0)",
+                                            }}
+                                            onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-3px)")}
+                                            onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0)")}
+                                        >
+                                            {/* Default text */}
+                                            <span className="transition-all duration-500 group-hover:-translate-y-2 group-hover:opacity-0 inline-block whitespace-nowrap">
+                                                Connect on Telegram
+                                            </span>
+
+                                            {/* Hover text */}
+                                            <span className="absolute left-1/2 -translate-x-1/2 transition-all duration-500 opacity-0 group-hover:opacity-100 font-light whitespace-nowrap">
+                                                This will be a quick chat
+                                            </span>
+                                        </a>
+                                    </button>
                                 </div>
 
                             </motion.div>
-                        </div>
-
-                        {/* View Plans and Pricing Link */}
-                        <div className="text-center mt-8">
-                            <button className="text-blue-600 hover:text-blue-800 font-medium underline">
-                                View Plans and Pricing
-                            </button>
                         </div>
                     </div>
                 </div>

@@ -10,6 +10,8 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import ServiceCards from "./components/DesignServices";
 import FaqSection from "./components/FaqSection";
 import Price from "./components/Price";
+import LevelUpSection from "./components/LevelUpSection";
+import Footer from "./components/Footer";
 
 export default function HeaderSection() {
 
@@ -19,8 +21,8 @@ export default function HeaderSection() {
       <nav className="fixed top-0 left-0 w-full z-50 bg-white/30 backdrop-blur-md border-dashed border-b-[1.5px] border-black/20">
         <div className="max-w-4xl mx-auto flex items-center justify-between px-6 py-2 border-dashed border-l-[1.5px] border-r-[1.5px] border-black/20">
           {/* Logo */}
-          <div style={{width: "40%"}} className="flex-shrink-0">
-            <img style={{width: "40%"}} src="img/InspringLogo-Transparent.png" loading="lazy"  alt="company-logo" className="image" />
+          <div style={{ width: "40%" }} className="flex-shrink-0">
+            <img style={{ width: "40%" }} src="img/InspringLogo-Transparent.png" loading="lazy" alt="company-logo" className="image" />
           </div>
 
           {/* Nav + CTA grouped together */}
@@ -46,57 +48,46 @@ export default function HeaderSection() {
             </ul>
 
             {/* Slim CTA */}
-            <button
-                            className="price-button-bg shadow-xl text-white psx-10 pys-3 rounded-full transition-all duration-300 relative overflow-hidden min-w-[50px]" style={{ letterSpacing: "-0.04em" }}
-                        >
-            <a
-              href="#pricing"
-              className="relative shadow-xl shadow-black/20 inline-flex items-center justify-center text-xs font-small px-3 py-3 rounded-full min-w-[50px] transition-all duration-500 overflow-hidden group text-white  normal-text"
-              style={{
-                letterSpacing: "-0.03em",
-                // backgroundColor: "#E3767B",
-                transform: "translateY(0)",
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-3px)")}
-              onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0)")}
-            >
-              {/* Default text */}
-              <span className="transition-all duration-500 group-hover:-translate-y-2 group-hover:opacity-0 inline-block">
-                View Plans and Pricing
-              </span>
+            <button className="price-button-bg shadow-xl text-white psx-10 pys-3 rounded-full transition-all duration-300 relative overflow-hidden min-w-[50px]" style={{ letterSpacing: "-0.04em" }}>
+              <a
+                href="#pricing"
+                className="relative shadow-xl shadow-black/20 inline-flex items-center justify-center text-xs font-small px-3 py-3 rounded-full min-w-[50px] transition-all duration-500 overflow-hidden group text-white  normal-text"
+                style={{
+                  letterSpacing: "-0.03em",
+                  // backgroundColor: "#E3767B",
+                  transform: "translateY(0)",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-3px)")}
+                onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0)")}
+              >
+                {/* Default text */}
+                <span className="transition-all duration-500 group-hover:-translate-y-2 group-hover:opacity-0 inline-block">
+                  View Plans and Pricing
+                </span>
 
-              {/* Hover text */}
-              <span className="absolute left-1/2 -translate-x-1/2 transition-all duration-500 opacity-0 group-hover:opacity-100 font-light">
-                Get Started
-              </span>
-            </a>
+                {/* Hover text */}
+                <span className="absolute left-1/2 -translate-x-1/2 transition-all duration-500 opacity-0 group-hover:opacity-100 font-light">
+                  Get Started
+                </span>
+              </a>
             </button>
           </div>
         </div>
       </nav>
-      {/* Hero */}
       <Hero />
-      {/* <main> */}
       <TestimonialCard />
       <LogoCarousel />
-       <FeaturesSection />
-       <StepsWithVideo />
+      <FeaturesSection />
+      <StepsWithVideo />
       <ServicesSection />
       <Gallery />
-      <WhyChooseUs /> 
+      <WhyChooseUs />
       <Price />
-      <ServiceCards/>
+      <ServiceCards />
       <FaqSection />
+      <LevelUpSection />
       {/* <AchievementCards /> */}
-
-      {/* Footer */}
-      <footer className="py-12 text-center text-gray-600">
-        <p>
-          &copy; {new Date().getFullYear()} Stack Inc. | Privacy Policy | Legal
-        </p>
-      </footer>
-      {/* </main> */}
-      {/* </section> */}
+      <Footer /> 
     </div>
 
   );
