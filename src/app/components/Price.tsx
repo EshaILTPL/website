@@ -46,15 +46,15 @@ const Price = () => {
                                     {/* Top-right icon */}
                                     <div className="absolute top-4 left-4">
                                         {toggled ? (
-                                            <Star className="w-6 h-6 text-green-500 tex-xs animate-bounce" />
+                                            <Star className="w-6 h-6 text-green-500 text-sm animate-bounce" />
                                         ) : (
-                                            <CheckCircle className="w-6 h-6 text-gray-400 animate-rotate" />
+                                            <CheckCircle className="w-6 h-6 text-gray-400 animate-bounce" />
                                         )}
                                     </div>
 
                                     {/* Header + Toggle */}
                                     <div className="flex justify-between items-center mb-4 mt-6">
-                                        <h2 className={'text-xl font-bold'}>
+                                        <h2 className={'text-xl mt-4 font-bold'}>
                                             {toggled ? (
                                                 <p className='text-2xl font-medium text-white'>Retainer Boost</p>
                                             ) : (
@@ -74,7 +74,7 @@ const Price = () => {
                                     </div>
 
                                     {/* Middle rounded background section */}
-                                    <div style={{ background: "linear-gradient(179.999997deg, rgba(235, 230, 230, 0.03) 3.563133%, rgba(255, 255, 255, 0.05) 100%)" }} className={`p-2 rounded-2xl mb-4 tex-xs text-white`}>
+                                    <div style={{ background: "linear-gradient(179.999997deg, rgba(235, 230, 230, 0.03) 3.563133%, rgba(255, 255, 255, 0.05) 100%)" }} className={`p-2 rounded-2xl mb-4 text-sm text-white`}>
                                         <p className="text-sm">
                                             {toggled
                                                 ? "Best suited for growing companies or agencies that require ongoing and fast design support."
@@ -88,57 +88,57 @@ const Price = () => {
                                     <ul className="space-y-3 mb-6">
                                         <li className="flex items-start text-sm">
                                             {toggled ? (
-                                                <> <span className="text-green-500 tex-xs mr-2">•</span>
-                                                    <span className="text-green-700 tex-xs">2 Active request at a time
+                                                <> <span className="text-green-500 text-sm mr-2">•</span>
+                                                    <span className="text-green-700 text-sm">2 Active request at a time
                                                     </span>
                                                 </>
                                             ) : (
-                                                <> <span className="text-green-500 tex-xs mr-2">•</span>
-                                                    <span className="text-gray-400 tex-xs">Wireframes</span>
+                                                <> <span className="text-green-500 text-sm mr-2">•</span>
+                                                    <span className="text-gray-400 text-sm">Wireframes</span>
                                                 </>
                                             )}
                                         </li>
                                         <li className="flex items-start text-sm">
-                                            {toggled ? (<> <span className="text-green-500 tex-xs mr-2">•</span>
-                                                <span className="text-green-700 tex-xs">3X Senior designer
+                                            {toggled ? (<> <span className="text-green-500 text-sm mr-2">•</span>
+                                                <span className="text-green-700 text-sm">3X Senior designer
                                                 </span></>) : (
-                                                <> <span className="text-green-500 tex-xs mr-2">•</span>
-                                                    <span className="text-gray-400 tex-xs">Designer</span>
+                                                <> <span className="text-green-500 text-sm mr-2">•</span>
+                                                    <span className="text-gray-400 text-sm">Designer</span>
                                                 </>
                                             )}
                                         </li>
                                         <li className="flex items-start text-sm">
-                                            <span className="text-green-500 tex-xs mr-2">•</span>
-                                            <span className="text-gray-400 tex-xs">Desktop, Tablet, Mobile Responsive Design</span>
+                                            <span className="text-green-500 text-sm mr-2">•</span>
+                                            <span className="text-gray-400 text-sm">Desktop, Tablet, Mobile Responsive Design</span>
                                         </li>
                                         <li className="flex items-start text-sm">
-                                            <span className="text-green-500 tex-xs mr-2">•</span>
-                                            <span className="text-gray-400 tex-xs">Brand Consistency</span>
+                                            <span className="text-green-500 text-sm mr-2">•</span>
+                                            <span className="text-gray-400 text-sm">Brand Consistency</span>
                                         </li>
                                         <li className="flex items-start text-sm">
-                                            <span className="text-green-500 tex-xs mr-2">•</span>
-                                            <span className="text-gray-400 tex-xs">Figma File</span>
+                                            <span className="text-green-500 text-sm mr-2">•</span>
+                                            <span className="text-gray-400 text-sm">Figma File</span>
                                         </li>
                                         <li className="flex items-start text-sm">
-                                            <span className="text-green-500 tex-xs mr-2">•</span>
-                                            <span className="text-gray-400 tex-xs">Updates every 48 hours</span>
+                                            <span className="text-green-500 text-sm mr-2">•</span>
+                                            <span className="text-gray-400 text-sm">Updates every 48 hours</span>
                                         </li>
                                         <li className="flex items-start text-sm">
-                                            <span className="text-green-500 tex-xs mr-2">•</span>
-                                            <span className="text-gray-400 tex-xs">2X Revision</span>
+                                            <span className="text-green-500 text-sm mr-2">•</span>
+                                            <span className="text-gray-400 text-sm">2X Revision</span>
                                         </li>
                                         <li className="flex items-start text-sm">
-                                            <span className="text-green-500 tex-xs mr-2">•</span>
-                                            <span className="text-gray-400 tex-xs">+$400 For Each Extra Page</span>
+                                            <span className="text-green-500 text-sm mr-2">•</span>
+                                            <span className="text-gray-400 text-sm">+$400 For Each Extra Page</span>
                                         </li>
                                         <li className="flex items-start text-sm">
-                                            <span className="text-green-500 tex-xs mr-2">•</span>
-                                            <span className="text-gray-400 tex-xs">Website development (Fizmer) +2x</span>
+                                            <span className="text-green-500 text-sm mr-2">•</span>
+                                            <span className="text-gray-400 text-sm">Website development (Fizmer) +2x</span>
                                         </li>
                                     </ul>
                                 </div>
                                 {/* Price */}
-                                <div className="mb-4 flex items-center space-x-2">
+                                <div className="mb-4 px-2 flex items-center space-x-2">
                                     {toggled ? (
                                         <h3 className="text-xl text-white">$6199</h3>
 
@@ -192,12 +192,12 @@ const Price = () => {
                                             onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0)")}
                                         >
                                             {/* Default text */}
-                                            <span className="transition-all duration-500 group-hover:-translate-y-1 group-hover:opacity-0 inline-block whitespace-nowrap">
+                                            <span className="transition-all text-white duration-500 group-hover:-translate-y-1 group-hover:opacity-0 inline-block whitespace-nowrap">
                                                 Connect on Telegram
                                             </span>
 
                                             {/* Hover text */}
-                                            <span className="absolute left-1/2 -translate-x-1/2 transition-all duration-500 opacity-0 font-light whitespace-nowrap group-hover:opacity-100">
+                                            <span className="absolute text-white left-1/2 -translate-x-1/2 transition-all duration-500 opacity-0 font-light whitespace-nowrap group-hover:opacity-100">
                                                 This will be a quick chat
                                             </span>
                                         </a>
@@ -226,30 +226,30 @@ const Price = () => {
                                     {/* Top-right icon */}
                                     <div className="absolute top-4 left-4">
                                         {toggledForWhite ? (
-                                            <Star className="w-6 h-6 text-green-500 tex-xs animate-bounce" />
+                                            <Star className="w-6 h-6 text-green-500 text-sm animate-bounce" />
                                         ) : (
-                                            <CheckCircle className="w-6 h-6 text-gray-400 animate-rotate" />
+                                            <CheckCircle className="w-6 h-6 text-gray-400 animate-bounce" />
                                         )}
                                     </div>
 
                                     {/* Header + Toggle */}
                                     <div className="flex justify-between items-center mb-2 mt-6">
-                                        <h2 className={'text-xl font-bold'}>
+                                        <h2 className={'text-xl font-bold mt-4'}>
                                             {toggledForWhite ? (
-                                                <p className='text-2xl font-medium text-black'>Landing page Design </p>
-                                            ) : (
                                                 <p className='text-2xl font-medium text-black'>Landing page Design + Dev</p>
+                                            ) : (
+                                                <p className='text-2xl font-medium text-black'>Landing page Design </p>
                                             )}
                                         </h2>
 
                                     </div>
 
                                     {/* Middle rounded background section */}
-                                    <div className={`p-2 rounded-2xl mb-1 ${toggledForWhite ? "bg-green-50 text-green-600" : "bg-gray-200 text-gray-700 tex-xs"}`}>
+                                    <div className={`p-2 rounded-2xl mb-1 ${toggledForWhite ? "bg-green-50 text-green-600" : "bg-gray-200 text-gray-700 text-sm"}`}>
                                         <p className="text-sm">
                                             {toggledForWhite
-                                                ? "You have activated the Retainer plan! Unlimited requests, priority support."
-                                                : "Ideal for ongoing design support with one active request at a time."}
+                                                ? "Ideal for ongoing design support with one active request at a time."
+                                                : "You have activated the Retainer plan! Unlimited requests, priority support."}
                                         </p>
                                     </div>
                                     {/* Divider */}
@@ -259,52 +259,55 @@ const Price = () => {
                                     <ul className="space-y-3 mb-4">
                                         <li className="flex items-start text-sm">
                                             {toggledForWhite ? (
-                                                <> <span className="text-green-500 tex-xs mr-2">•</span>
-                                                    <span className="text-green-700 tex-xs">2 Active request at a time
+                                                <> <span className="text-green-500 text-sm mr-2">•</span>
+                                                    <span className="text-green-700 text-sm">2 Active request at a time
                                                     </span>
                                                 </>
                                             ) : (
-                                                <> <span className="text-green-500 tex-xs mr-2">•</span>
-                                                    <span className="text-gray-700 tex-xs">Wireframes</span>
+                                                 <> <span className="text-green-500 text-sm mr-2">•</span>
+                                                    <span className="text-gray-700 text-sm">Wireframes</span>
                                                 </>
                                             )}
                                         </li>
                                         <li className="flex items-start text-sm">
-                                            {toggledForWhite ? (<> <span className="text-green-500 tex-xs mr-2">•</span>
-                                                <span className="text-green-700 tex-xs">3X Senior designer
-                                                </span></>) : (
-                                                <> <span className="text-green-500 tex-xs mr-2">•</span>
-                                                    <span className="text-gray-700 tex-xs">Designer</span>
+                                            {toggledForWhite ? (
+                                                <> <span className="text-green-500 text-sm mr-2">•</span>
+                                                    <span className="text-gray-700 text-sm">Designer</span>
+                                                </>
+                                            ) : (
+                                                <> <span className="text-green-500 text-sm mr-2">•</span>
+                                                <span className="text-green-700 text-sm">3X Senior designer
+                                                </span>
                                                 </>
                                             )}
                                         </li>
                                         <li className="flex items-start text-sm">
-                                            <span className="text-green-500 tex-xs mr-2">•</span>
-                                            <span className="text-gray-700 tex-xs">Desktop, Tablet, Mobile Responsive Design</span>
+                                            <span className="text-green-500 text-sm mr-2">•</span>
+                                            <span className="text-gray-700 text-sm">Desktop, Tablet, Mobile Responsive Design</span>
                                         </li>
                                         <li className="flex items-start text-sm">
-                                            <span className="text-green-500 tex-xs mr-2">•</span>
-                                            <span className="text-gray-700 tex-xs">Brand Consistency</span>
+                                            <span className="text-green-500 text-sm mr-2">•</span>
+                                            <span className="text-gray-700 text-sm">Brand Consistency</span>
                                         </li>
                                         <li className="flex items-start text-sm">
-                                            <span className="text-green-500 tex-xs mr-2">•</span>
-                                            <span className="text-gray-700 tex-xs">Figma File</span>
+                                            <span className="text-green-500 text-sm mr-2">•</span>
+                                            <span className="text-gray-700 text-sm">Figma File</span>
                                         </li>
                                         <li className="flex items-start text-sm">
-                                            <span className="text-green-500 tex-xs mr-2">•</span>
-                                            <span className="text-gray-700 tex-xs">Updates every 48 hours</span>
+                                            <span className="text-green-500 text-sm mr-2">•</span>
+                                            <span className="text-gray-700 text-sm">Updates every 48 hours</span>
                                         </li>
                                         <li className="flex items-start text-sm">
-                                            <span className="text-green-500 tex-xs mr-2">•</span>
-                                            <span className="text-gray-700 tex-xs">2X Revision</span>
+                                            <span className="text-green-500 text-sm mr-2">•</span>
+                                            <span className="text-gray-700 text-sm">2X Revision</span>
                                         </li>
                                         <li className="flex items-start text-sm">
-                                            <span className="text-green-500 tex-xs mr-2">•</span>
-                                            <span className="text-gray-700 tex-xs">+$400 For Each Extra Page</span>
+                                            <span className="text-green-500 text-sm mr-2">•</span>
+                                            <span className="text-gray-700 text-sm">+$400 For Each Extra Page</span>
                                         </li>
                                         <li className="flex items-start text-sm">
-                                            <span className="text-green-500 tex-xs mr-2">•</span>
-                                            <span className="text-gray-700 tex-xs">Website development (Fizmer) +2x</span>
+                                            <span className="text-green-500 tex-sm mr-2">•</span>
+                                            <span className="text-gray-700 tex-sm">Website development (Fizmer) +2x</span>
                                         </li>
                                     </ul>
                                     <div className="flex space-x-2">
@@ -318,17 +321,15 @@ const Price = () => {
                 ${toggledForWhite ? "translate-x-6" : "translate-x-0"}`}
                                             ></div>
                                         </button>
-                                        <h3 className={'text-xl font-bold'}>Website Development</h3>
+                                        <h3 className={'text-sm text-gray-700'}>Website Development</h3>
                                     </div>
                                 </div>
                                 {/* Price */}
-                                <div className="mb-2 flex items-center space-x-2">
+                                <div className="mb-2 flex items-center px-2 space-x-2">
                                     {toggledForWhite ? (
-                                        <h3 className="text-xl text-black">$6199</h3>
-
-                                    ) : (
                                         <h3 className="text-xl text-black">$9499</h3>
-
+                                    ) : (
+                                        <h3 className="text-xl text-black">$6199</h3>
                                     )}
                                     <p className="text-sm text-gray-600">/per month</p>
                                 </div>

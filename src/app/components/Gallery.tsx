@@ -8,11 +8,15 @@ type GalleryImage = {
 };
 
 const images: GalleryImage[] = [
-  { src: "/img/cowork-2.jpg", alt: "Coworking 2" },
-  { src: "/img/cowork-2.jpg", alt: "Coworking 2" },
-  { src: "/img/cowork-2.jpg", alt: "Coworking 2" },
-  { src: "/img/cowork-2.jpg", alt: "Coworking 2" },
-  { src: "/img/knowledge-1.jpg", alt: "Knowledge 1" },
+  { src: "/img/Bitmap.png", alt: "Coworking 2" },
+  { src: "/img/Bitmap_1.png", alt: "Coworking 2" },
+  { src: "/img/Bitmap_2.png", alt: "Coworking 2" },
+  { src: "/img/Bitmap_3.png", alt: "Coworking 2" },
+  { src: "/img/Bitmap_4.png", alt: "Coworking 2" },
+  { src: "/img/Bitmap_5.png", alt: "Knowledge 1" },
+  { src: "/img/Bitmap_6.png", alt: "Knowledge 1" },
+  { src: "/img/Bitmap_7.png", alt: "Knowledge 1" },
+  { src: "/img/Bitmap_8.png", alt: "Knowledge 1" },
 ];
 
 export default function Gallery() {

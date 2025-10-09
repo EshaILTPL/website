@@ -2,14 +2,12 @@
 import styles from "../LogoCarousel.module.css";
 
 const logos = [
-  "/img/logo-variant.png",
-  "/img/logo-variant.png",
-  "/img/logo-variant.png",
-  "/img/logo-variant.png",
-  "/img/logo-variant.png",
-  "/img/logo-variant.png",
-  "/img/logo-variant.png",
-  "/img/logo-variant.png",
+  "/img/archrival.png",
+  "/img/continental.png.webp",
+  "/img/drAanaCabeca.png",
+  "/img/harting.png",
+  "/img/versaclimber.png",
+  "/img/lincolnBerean.png.webp",
 ];
 
 export default function LogoCarousel() {

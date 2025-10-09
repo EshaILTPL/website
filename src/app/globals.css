@@ -23,7 +23,7 @@ body {
   background: var(--background);
   color: var(--foreground);
       font-family: "Inter", sans-serif;
-letter-spacing: -0.03em;
+/* letter-spacing: -0.03em; */
 }
 .header-text{
   font-family: "Phudu", sans-serif;
@@ -36,7 +36,7 @@ letter-spacing: -0.03em;
   /* font-optical-sizing: auto; */
   font-weight: 700;
   font-style: normal;
-  letter-spacing: -0.04em;
+  /* letter-spacing: -0.04em; */
 }
 .normal-text {
   font-family: "Inter", sans-serif;
