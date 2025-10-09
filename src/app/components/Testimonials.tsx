@@ -16,22 +16,22 @@ export default function TestimonialsCarousel() {
                 <Swiper
                     modules={[Pagination, Autoplay]}
                     loop={true}
+                    centeredSlides={true}
+                    spaceBetween={20}
+                    slidesPerView={3.5}
                     autoplay={{
                         delay: 3000,
                         disableOnInteraction: false,
                         pauseOnMouseEnter: true,
                     }}
                     pagination={{ el: ".custom-pagination", clickable: true }}
-                    spaceBetween={20}
-                    centeredSlides={true}
-                    slidesPerView={3.5}
                     breakpoints={{
                         0: { slidesPerView: 1.05, centeredSlides: true, spaceBetween: 12 },
                         640: { slidesPerView: 1.25, centeredSlides: true, spaceBetween: 16 },
                         768: { slidesPerView: 1.5, centeredSlides: true, spaceBetween: 20 },
-                        1024: { slidesPerView: 2, centeredSlides: true, spaceBetween: 24 },
+                        1024: { slidesPerView: 3.5, centeredSlides: true, spaceBetween: 24 },
                     }}
-                    className="py-10 w-full !overflow-visible"
+                    className="py-10 w-full !overflow-visible custom-swiper"
                 >
                     {testimonials.map((item, index) => (
                         <SwiperSlide
