@@ -10,37 +10,37 @@ const ServiceCardsFlip = () => {
       id: 1,
       title: "Resource Constraints",
       problem: "Internal design teams may be understaffed or lack the specific skills needed for certain projects.",
-      solution: "KREEB's subscription model offers high-quality design services at a fraction of the cost of hiring an in-house team, making it a cost-effective solution for clients."
+      solution: "InspiringLife's subscription model offers high-quality design services at a fraction of the cost of hiring an in-house team, making it a cost-effective solution for clients."
     },
     {
       id: 2,
       title: "Managing Workloads",
       problem: "Internal teams might struggle with managing workloads, especially during peak periods or when handling multiple projects simultaneously.",
-      solution: "KREEB provides scalable design resources that can handle fluctuating workloads efficiently."
+      solution: "InspiringLife provides scalable design resources that can handle fluctuating workloads efficiently."
     },
     {
       id: 3,
       title: "Quality Consistency",
       problem: "Maintaining consistent design quality across different projects and team members can be challenging.",
-      solution: "KREEB ensures consistent high-quality output through standardized processes and expert designers."
+      solution: "InspiringLife ensures consistent high-quality output through standardized processes and expert designers."
     },
     {
       id: 4,
       title: "Quality Consistency",
       problem: "Maintaining consistent design quality across different projects and team members can be challenging.",
-      solution: "KREEB ensures consistent high-quality output through standardized processes and expert designers."
+      solution: "InspiringLife ensures consistent high-quality output through standardized processes and expert designers."
     },
     {
       id: 5,
       title: "Quality Consistency",
       problem: "Maintaining consistent design quality across different projects and team members can be challenging.",
-      solution: "KREEB ensures consistent high-quality output through standardized processes and expert designers."
+      solution: "InspiringLife ensures consistent high-quality output through standardized processes and expert designers."
     },
     {
       id: 6,
       title: "Quality Consistency",
       problem: "Maintaining consistent design quality across different projects and team members can be challenging.",
-      solution: "KREEB ensures consistent high-quality output through standardized processes and expert designers."
+      solution: "InspiringLife ensures consistent high-quality output through standardized processes and expert designers."
     }
   ];
       const sectionRef = useRef<HTMLDivElement>(null);
@@ -75,7 +75,7 @@ const ServiceCardsFlip = () => {
       <div className="max-w-6xl mx-auto text-center">
         <div className="max-w-4xl mx-auto">
           <div className="w-1/2 max-w-sm mx-auto mb-4 mt-4">
-            <h2 className="text-2xl md:text-md subheader-text font-bold mb-4 text-black">
+            <h2 className="text-4xl md:text-md subheader-text font-bold mb-4 text-black">
               What&apos;s holding you back from choosing us, considering we&apos;ve already addressed these issues?
             </h2>
           </div>
@@ -95,7 +95,7 @@ const ServiceCardsFlip = () => {
         {/* Front of card */}
         <div className="absolute inset-0 h-full w-full rounded-4xl bg-white border-[1.5px] border-dashed border-black/20 p-4 text-black [backface-visibility:hidden] overflow-hidden">
           <div className="flex flex-col h-full text-left">
-            <h3 className="text-base font-semibold normal-text mb-2">
+            <h3 className="font-semibold text-base md:text-lg text-black mb-1">
               {card.id}. {card.title}
             </h3>
             <div className="bg-gray-100 mb-2 p-2 rounded-full flex items-center justify-center">

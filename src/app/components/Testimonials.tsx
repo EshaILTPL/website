@@ -1,41 +1,36 @@
 import React from "react";
 import { testimonials } from "../data/testimonials";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
 
 export default function TestimonialsCarousel() {
     return (
-        <div id="achievements" style={{ backgroundColor: "#f5f5f5e8" }} className="relative w-full flex justify-center px-2 py-10 sm:py-10 md:px-10 sm:px-6 md:px-8">
+        <div style={{ backgroundColor: "#f5f5f5e8" }} className="relative w-full flex justify-center px-2 py-10 sm:py-10 md:px-10 sm:px-6 md:px-8">
             <div className="relative w-full max-w-3xl overflow-hidden">
                 {/* Fade edges */}
                 <div className="pointer-events-none absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-[#f5f5f5e8] to-transparent z-20"></div>
                 <div className="pointer-events-none absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-[#f5f5f5e8] to-transparent z-20"></div>
                 <Swiper
-                    modules={[Pagination, Autoplay]}
+                    modules={[Autoplay, FreeMode]}
+                    slidesPerView="auto"
+                    spaceBetween={30}
                     loop={true}
-                    centeredSlides={true}
-                    spaceBetween={20}
-                    slidesPerView={3.5}
+                    freeMode={true}
+                    speed={5000} // controls continuous scroll speed
                     autoplay={{
-                        delay: 3000,
+                        delay: 3000, // no delay between slides
                         disableOnInteraction: false,
-                        pauseOnMouseEnter: true,
                     }}
-                    pagination={{ el: ".custom-pagination", clickable: true }}
-                    breakpoints={{
-                        0: { slidesPerView: 1.05, centeredSlides: true, spaceBetween: 12 },
-                        640: { slidesPerView: 1.25, centeredSlides: true, spaceBetween: 16 },
-                        768: { slidesPerView: 1.5, centeredSlides: true, spaceBetween: 20 },
-                        1024: { slidesPerView: 3.5, centeredSlides: true, spaceBetween: 24 },
-                    }}
-                    className="py-10 w-full !overflow-visible custom-swiper"
+                    allowTouchMove={false} // optional - disable manual drag
+                    className="py-10 w-full !overflow-visible"
                 >
-                    {testimonials.map((item, index) => (
+
+                    {testimonials.concat(testimonials).map((item, index) => (
                         <SwiperSlide
-                            key={item.id ?? index}
+                            key={`${item.id}-${index}`} // 👈 makes each key unique
                             className="!w-[85%] sm:!w-[90%] md:!w-[340px] lg:!w-[360px] flex justify-center"
                         >
                             <div className="max-w-md mx-auto relative overflow-visible">

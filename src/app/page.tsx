@@ -12,6 +12,9 @@ import FaqSection from "./components/FaqSection";
 import Price from "./components/Price";
 import LevelUpSection from "./components/LevelUpSection";
 import Footer from "./components/Footer";
+import AchievementCards from "./components/AchievementCards";
+import InteractiveParticlesSection from "./components/InteractiveParticlesSection";
+import FullWidthImageSlider from "./components/FullWidthImageSlider";
 
 export default function HeaderSection() {
 
@@ -75,6 +78,7 @@ export default function HeaderSection() {
         </div>
       </nav>
       <Hero />
+      <AchievementCards />
       <TestimonialCard />
       <LogoCarousel />
       <FeaturesSection />
@@ -82,11 +86,12 @@ export default function HeaderSection() {
       <ServicesSection />
       <Gallery />
       <WhyChooseUs />
+      <InteractiveParticlesSection />
       <Price />
+      <FullWidthImageSlider />
       <ServiceCards />
       <FaqSection />
       <LevelUpSection />
-      {/* <AchievementCards /> */}
       <Footer /> 
     </div>
 

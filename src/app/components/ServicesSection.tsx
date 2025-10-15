@@ -21,10 +21,10 @@ export default function ServicesSection() {
       <div className="max-w-6xl mx-auto px-6 text-center border-r-[1.5px] border-l-[1.5px] border-dashed border-black/20">
         <div className="max-w-4xl mx-auto">
           <div className="w-1/2 max-w-sm mx-auto mb-4">
-            <h2 className="text-2xl md:text-md subheader-text font-bold mb-4 text-black">
+            <h2 className="text-3xl md:text-md subheader-text font-bold mb-4 text-black">
               We are here to Serve...
             </h2>
-            <div className="text-sm normal-text text-black max-sm mx-auto">
+            <div className="text-md normal-text text-black max-sm mx-auto">
               <p>Stop stressing yourself in finding out the perfect person for a particular design needs</p>
             </div>
           </div>
@@ -45,9 +45,9 @@ export default function ServicesSection() {
       className="relative flex flex-col items-center group cursor-pointer border-t-[1.5px] border-l-[1.5px] border-dashed border-black/20 p-4"
     >
       {/* Image styled like cards */}
-      <div className="relative w-32 h-20 flex justify-center items-end gap-2">
+      <div className="relative w-60 h-20 flex justify-center items-end gap-2">
         {/* Left image */}
-        <div className="w-32 h-20 overflow-hidden rounded-md shadow-md transform -rotate-5 origin-bottom transition-transform duration-300 cursor-pointer">
+        <div className="w-50 h-20 overflow-hidden rounded-md shadow-md transform -rotate-5 origin-bottom transition-transform duration-300 cursor-pointer">
           <img
             src={service.imgLeft}
             alt={`${service.title} left`}
@@ -58,7 +58,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Right image */}
-        <div className="w-32 h-20 overflow-hidden rounded-md shadow-md transform rotate-5 origin-bottom transition-transform duration-300 cursor-pointer">
+        <div className="w-50 h-20 overflow-hidden rounded-md shadow-md transform rotate-5 origin-bottom transition-transform duration-300 cursor-pointer">
           <img
             src={service.imgRight}
             alt={`${service.title} right`}

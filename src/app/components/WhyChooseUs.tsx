@@ -93,11 +93,11 @@ const WhyChooseUs: React.FC = () => {
                         {/* Header Section */}
                         <div className="max-w-4xl mx-auto">
                             <div className="w-1/2 max-w-sm mx-auto mb-10">
-                                <h2 className="text-2xl md:text-md subheader-text font-bold mb-4">
+                                <h2 className="text-4xl md:text-md subheader-text font-bold mb-4">
                                     Why choose us?
                                 </h2>
-                                <div className="text-sm normal-text text-black max-sm mx-auto">
-                                    <p>Check out what Kreed offers Vs employees and other agencies. It&apos;s quite a lot!</p>
+                                <div className="text-md normal-text text-black max-sm mx-auto">
+                                    <p>Check out what InspiringLife offers Vs employees and other agencies. It&apos;s quite a lot!</p>
                                 </div>
                             </div>
                         </div>

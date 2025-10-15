@@ -19,10 +19,10 @@ export default function StepsWithVideo() {
         
         {/* Heading */}
         <div className="w-1/2 max-w-sm mx-auto mb-14 text-center">
-          <h2 className="text-2xl font-bold mb-4 text-black">
+          <h2 className="text-4xl font-bold mb-4 text-black">
             How simple it can be to get your Projects Done
           </h2>
-          <h3 className="text-sm text-black mx-auto px-6 max-w-[80%] leading-relaxed">
+          <h3 className="text-md text-black mx-auto px-6 max-w-[80%] leading-relaxed">
             Just step away from those traditional old methods of hiring plus managing and see for yourself
           </h3>
         </div>

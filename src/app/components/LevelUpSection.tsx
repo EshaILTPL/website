@@ -50,7 +50,7 @@ export default function LevelUpSection() {
       <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.97 }}
-        className="relative px-8 py-3 rounded-full bg-white text-black font-medium shadow-[0_0_20px_rgba(255,255,255,0.3)] transition-all hover:shadow-[0_0_40px_rgba(255,255,255,0.5)]"
+        className="relative px-8 py-3 rounded-full price-button-bg border-gray-700 text-white font-medium shadow-[0_0_20px_rgba(255,255,255,0.3)] transition-all hover:shadow-[0_0_40px_rgba(255,255,255,0.5)]"
       >
         ✦ Join the Elite Club
       </motion.button>

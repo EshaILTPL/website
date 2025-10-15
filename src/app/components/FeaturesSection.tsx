@@ -53,10 +53,10 @@ export default function FeaturesSection() {
             {/* Header Section */}
             <div className="max-w-4xl mx-auto">
               <div className="w-1/2 max-w-sm mx-auto mb-10">
-                <h2 className="text-2xl md:text-md subheader-text font-bold mb-4">
+                <h2 className="text-4xl md:text-md subheader-text font-bold mb-4">
                   Benefit of InspiringLife
                 </h2>
-                <div className="text-sm normal-text text-black">
+                <div className="text-md normal-text text-black">
                   <p>We do things a little differently, here&apos;s a quick overview of just a</p>
                   <p>few of Stack Coworking&apos;s unique offerings.</p>
                 </div>
@@ -99,7 +99,7 @@ export default function FeaturesSection() {
                       <Icon className="w-8 h-8 text-gray-400" />
                     </motion.div>
 
-                    <h3 className="text-sm subheader-text font-semibold mb-2">
+                    <h3 className="font-semibold text-base md:text-lg text-black mb-1">
                       {feature.title}
                     </h3>
                     <p className="text-black text-sm normal-text">{feature.desc}</p>

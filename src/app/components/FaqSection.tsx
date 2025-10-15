@@ -19,10 +19,10 @@ export default function FAQSection() {
       <div className="max-w-6xl mx-auto px-6 text-center border-black/20 border-x-[1.5px] border-dashed">
         <div className="border-black/20 border-b-[1.5px] border-dashed mb-4">
           <div className="w-1/2 max-w-sm mx-auto mb-4">
-            <h2 className="text-2xl font-bold mb-4 text-black">
+            <h2 className="text-4xl font-bold mb-4 text-black">
               Frequently Asked Questions
             </h2>
-            <h3 className="text-sm text-black mx-auto px-6 max-w-[80%] leading-relaxed">
+            <h3 className="text-md text-black mx-auto px-6 max-w-[80%] leading-relaxed">
               We Get It—Curiosity Leads to Success! Got questions? That’s a great sign.
             </h3>
           </div>

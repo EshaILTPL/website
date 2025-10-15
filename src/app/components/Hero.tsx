@@ -58,7 +58,7 @@ export default function Hero() {
                             />
                         </h1>
 
-                        <p className="mt-4 text-black text-base text-sm normal-text">
+                        <p className="mt-4 text-black text-base text-md normal-text">
                             We don&apos;t just design, we solve your brand&apos;s biggest challenges
                         </p>
                     </motion.div>

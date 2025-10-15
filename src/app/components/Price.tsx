@@ -17,10 +17,10 @@ const Price = () => {
                         {/* Header Section */}
                         <div className="max-w-4xl mx-auto">
                             <div className="w-1/2 max-w-sm mx-auto mb-10">
-                                <h2 className="text-2xl md:text-md subheader-text font-bold mb-4">
+                                <h2 className="text-4xl md:text-md subheader-text font-bold mb-4">
                                     No Contract, No Surprises
                                 </h2>
-                                <div className="text-sm w-1/2 max-w-md mx-auto normal-text text-black">
+                                <div className="text-md w-1/2 max-w-md mx-auto normal-text text-black">
                                     <p>Consistent Pricing and Value Each Month, with the Flexibility to Cancel Anytime</p>
                                 </div>
                             </div>

@@ -12,7 +12,7 @@ const logos = [
 
 export default function LogoCarousel() {
   return (
-    <div className={`max-w-6xl mx-auto border-dashed border-b-[1.5px] border-black/20 ${styles.carouselWrapper}`} style={{marginTop:"4%"}}>
+    <div className={`max-w-6xl mx-auto border-dashed border-b-[1.5px] border-t-[1.5px] border-black/20 ${styles.carouselWrapper}`} style={{marginTop:"4%", marginBottom:"8%"}}>
       <div className={styles.carousel}>
         {/* Duplicate logos for seamless loop */}
         {[...logos, ...logos].map((logo, idx) => (
