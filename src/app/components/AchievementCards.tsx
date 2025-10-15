@@ -48,7 +48,7 @@ export default function AchievementsSection() {
                   Our Achievement
                 </h2>
                 <div className="text-md w-1/2 max-w-md mx-auto normal-text text-black">
-                  <p>Curious about what we've accomplished? Let our track record speak for itself.</p>
+                  <p>Curious about what we&apos;ve accomplished? Let our track record speak for itself.</p>
                 </div>
               </div>
             </div>
