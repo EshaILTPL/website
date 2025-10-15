@@ -13,7 +13,7 @@ import Price from "./components/Price";
 import LevelUpSection from "./components/LevelUpSection";
 import Footer from "./components/Footer";
 import AchievementCards from "./components/AchievementCards";
-import InteractiveParticlesSection from "./components/InteractiveParticlesSection";
+// import InteractiveParticlesSection from "./components/InteractiveParticlesSection";
 import FullWidthImageSlider from "./components/FullWidthImageSlider";
 
 export default function HeaderSection() {
@@ -86,7 +86,7 @@ export default function HeaderSection() {
       <ServicesSection />
       <Gallery />
       <WhyChooseUs />
-      <InteractiveParticlesSection />
+      {/* <InteractiveParticlesSection /> */}
       <Price />
       <FullWidthImageSlider />
       <ServiceCards />

@@ -16,11 +16,11 @@ const Price = () => {
                     <div className="max-w-6xl mx-auto">
                         {/* Header Section */}
                         <div className="max-w-4xl mx-auto">
-                            <div className="w-1/2 max-w-sm mx-auto mb-10">
+                            <div className="max-w-sm mx-auto mb-10">
                                 <h2 className="text-4xl md:text-md subheader-text font-bold mb-4">
                                     No Contract, No Surprises
                                 </h2>
-                                <div className="text-md w-1/2 max-w-md mx-auto normal-text text-black">
+                                <div className="text-md max-w-md mx-auto normal-text text-black">
                                     <p>Consistent Pricing and Value Each Month, with the Flexibility to Cancel Anytime</p>
                                 </div>
                             </div>
@@ -28,13 +28,13 @@ const Price = () => {
                         <div className="grid md:grid-cols-2 gap-8">
                             {/* First Card */}
                             <motion.div
-                                className={`relative p-1 rounded-4xl shadow-xl border transition-all duration-500
+                                className={`relative p-3 rounded-4xl shadow-xl border transition-all duration-500
           ${toggled ? "bg-black border-gray-800" : "bg-black"}`}
                                 initial={{ opacity: 0, y: 40 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                             >
-                                <div className="p-2 mb-2 rounded-4xl shadow-xl border transition-all duration-500 bg-white/10" style={{
+                                <div className="p-3 mb-2 rounded-4xl shadow-xl border transition-all duration-500 bg-white/10" style={{
                                     borderColor: "rgba(255, 255, 255, 0.1)",
                                     borderLeftWidth: "1px",
                                     borderRightWidth: "1px",
@@ -44,7 +44,7 @@ const Price = () => {
                                     opacity: "100%"
                                 }}>
                                     {/* Top-right icon */}
-                                    <div className="absolute top-4 left-4">
+                                    <div className="absolute top-10 left-6">
                                         {toggled ? (
                                             <Star className="w-6 h-6 text-green-500 text-sm animate-bounce" />
                                         ) : (
@@ -74,8 +74,9 @@ const Price = () => {
                                     </div>
 
                                     {/* Middle rounded background section */}
-                                    <div style={{ background: "linear-gradient(179.999997deg, rgba(235, 230, 230, 0.03) 3.563133%, rgba(255, 255, 255, 0.05) 100%)" }} className={`p-2 rounded-2xl mb-4 text-sm text-white`}>
-                                        <p className="text-sm">
+                                    <div style={{ background: "linear-gradient(179.999997deg, rgba(235, 230, 230, 0.03) 3.563133%, rgba(255, 255, 255, 0.05) 100%)" }}
+                                     className={`p-1 rounded-xl mb-2 text-md text-white`}>
+                                        <p className="text-[16px]">
                                             {toggled
                                                 ? "Best suited for growing companies or agencies that require ongoing and fast design support."
                                                 : "Ideal for ongoing design support with one active request at a time."}
@@ -209,12 +210,12 @@ const Price = () => {
 
                             {/* Second Card - Example */}
                             <motion.div
-                                className={`relative p-1 rounded-4xl shadow-xl transition-all bg-white duration-500`}
+                                className={`relative p-3 rounded-4xl shadow-xl transition-all bg-white duration-500`}
                                 initial={{ opacity: 0, y: 40 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                             >
-                                <div className="p-2 mb-2 rounded-4xl border transition-all duration-500 bg-gray-300/10" style={{
+                                <div className="p-3 mb-2 rounded-4xl border transition-all duration-500 bg-gray-300/20" style={{
                                     borderColor: "rgba(255, 255, 255, 0.1)",
                                     borderLeftWidth: "1px",
                                     borderRightWidth: "1px",
@@ -224,7 +225,7 @@ const Price = () => {
                                     opacity: "100%"
                                 }}>
                                     {/* Top-right icon */}
-                                    <div className="absolute top-4 left-4">
+                                    <div className="absolute top-10 left-6">
                                         {toggledForWhite ? (
                                             <Star className="w-6 h-6 text-green-500 text-sm animate-bounce" />
                                         ) : (
@@ -238,15 +239,15 @@ const Price = () => {
                                             {toggledForWhite ? (
                                                 <p className='text-2xl font-medium text-black'>Landing page Design + Dev</p>
                                             ) : (
-                                                <p className='text-2xl font-medium text-black'>Landing page Design </p>
+                                                <p className='text-2xl font-medium text-black'>Landing page Design</p>
                                             )}
                                         </h2>
 
                                     </div>
 
                                     {/* Middle rounded background section */}
-                                    <div className={`p-2 rounded-2xl mb-1 ${toggledForWhite ? "bg-green-50 text-green-600" : "bg-gray-200 text-gray-700 text-sm"}`}>
-                                        <p className="text-sm">
+                                    <div className={`p-1 rounded-xl ${toggledForWhite ? "bg-green-50 text-green-600" : "bg-gray-200 text-gray-700"}`}>
+                                        <p className="text-md">
                                             {toggledForWhite
                                                 ? "Ideal for ongoing design support with one active request at a time."
                                                 : "You have activated the Retainer plan! Unlimited requests, priority support."}
@@ -257,7 +258,7 @@ const Price = () => {
 
                                     {/* Features */}
                                     <ul className="space-y-3 mb-4">
-                                        <li className="flex items-start text-sm">
+                                        <li className="flex items-start text-sm fixed">
                                             {toggledForWhite ? (
                                                 <> <span className="text-green-500 text-sm mr-2">•</span>
                                                     <span className="text-green-700 text-sm">2 Active request at a time

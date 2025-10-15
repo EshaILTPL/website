@@ -16,13 +16,13 @@ export default function TestimonialsCarousel() {
                 <Swiper
                     modules={[Autoplay, FreeMode]}
                     slidesPerView="auto"
-                    spaceBetween={30}
+                    spaceBetween={20}
                     loop={true}
                     freeMode={true}
                     speed={5000} // controls continuous scroll speed
                     autoplay={{
-                        delay: 3000, // no delay between slides
-                        disableOnInteraction: false,
+                        delay: 3000,
+                        disableOnInteraction: true,
                     }}
                     allowTouchMove={false} // optional - disable manual drag
                     className="py-10 w-full !overflow-visible"
@@ -58,10 +58,9 @@ export default function TestimonialsCarousel() {
                                         <div className="px-6">
                                             <div className="px-6 py-4 rounded-tl-2xl rounded-tr-2xl rounded-br-2xl bg-gray-100 text-gray-600 text-sm leading-relaxed normal-text justify-start max-w-[80%]">
                                                 <p>{item.quote}</p>
-                                                <p className="mt-2 font-semibold text-gray-800">{item.author}</p>
                                             </div></div>
 
-                                        {/* Reply bubble */}
+                                        {/* Reply bubble
                                         {item.reply && (
                                             <div className="px-6 py-2 flex justify-end">
                                                 <div className="group inline-block max-w-[75%]">
@@ -74,7 +73,7 @@ export default function TestimonialsCarousel() {
                                                 </div>
                                             </div>
                                         )}
-
+ */}
 
                                         {/* Footer */}
                                         <div className="px-10 py-6 flex items-center gap-3">

@@ -18,13 +18,13 @@ export default function StepsWithVideo() {
       <div className="max-w-6xl mx-auto w-full border-dashed border-x-[1.5px] border-black/20">
         
         {/* Heading */}
-        <div className="w-1/2 max-w-sm mx-auto mb-14 text-center">
+        <div className="max-w-sm mx-auto mb-14 text-center">
           <h2 className="text-4xl font-bold mb-4 text-black">
             How simple it can be to get your Projects Done
           </h2>
-          <h3 className="text-md text-black mx-auto px-6 max-w-[80%] leading-relaxed">
+          <p className="text-md text-black mx-auto">
             Just step away from those traditional old methods of hiring plus managing and see for yourself
-          </h3>
+          </p>
         </div>
 
         {/* Content Grid */}

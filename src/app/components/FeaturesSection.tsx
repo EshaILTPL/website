@@ -52,13 +52,12 @@ export default function FeaturesSection() {
           <div className="max-w-6xl mx-auto">
             {/* Header Section */}
             <div className="max-w-4xl mx-auto">
-              <div className="w-1/2 max-w-sm mx-auto mb-10">
+              <div className="max-w-sm mx-auto mb-10">
                 <h2 className="text-4xl md:text-md subheader-text font-bold mb-4">
                   Benefit of InspiringLife
                 </h2>
                 <div className="text-md normal-text text-black">
-                  <p>We do things a little differently, here&apos;s a quick overview of just a</p>
-                  <p>few of Stack Coworking&apos;s unique offerings.</p>
+                  <p>We do things a little differently, here&apos;s a quick overview of just a few of our unique offerings.</p>
                 </div>
               </div>
             </div>
