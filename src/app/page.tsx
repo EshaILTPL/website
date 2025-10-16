@@ -14,7 +14,7 @@ import LevelUpSection from "./components/LevelUpSection";
 import Footer from "./components/Footer";
 import AchievementCards from "./components/AchievementCards";
 // import InteractiveParticlesSection from "./components/InteractiveParticlesSection";
-import FullWidthImageSlider from "./components/FullWidthImageSlider";
+// import FullWidthImageSlider from "./components/FullWidthImageSlider";
 
 export default function HeaderSection() {
 
@@ -40,12 +40,21 @@ export default function HeaderSection() {
                 <li key={i} className="relative group">
                   <a
                     href={item.href}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const target = document.querySelector(item.href);
+                      const offset = 80; // height of your fixed navbar
+                      if (target) {
+                        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                        window.scrollTo({ top, behavior: "smooth" });
+                      }
+                    }}
                     className="text-sm text-gray-500 transition-all duration-300 group-hover:text-black group-hover:-translate-y-1 inline-block"
                   >
                     {item.label}
-                    {/* Black dot */}
                     <span className="absolute left-1/2 bottom-[-6px] w-1.5 h-1.5 rounded-full bg-black scale-0 group-hover:scale-100 transition-transform duration-300 -translate-x-1/2"></span>
                   </a>
+
                 </li>
               ))}
             </ul>
@@ -88,11 +97,11 @@ export default function HeaderSection() {
       <WhyChooseUs />
       {/* <InteractiveParticlesSection /> */}
       <Price />
-      <FullWidthImageSlider />
+      {/* <FullWidthImageSlider /> */}
       <ServiceCards />
       <FaqSection />
       <LevelUpSection />
-      <Footer /> 
+      <Footer />
     </div>
 
   );

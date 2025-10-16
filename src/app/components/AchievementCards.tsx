@@ -35,9 +35,14 @@ export default function AchievementsSection() {
   ];
 
   return (
-    <section
+      <motion.section
       id="achievements"
-      className="w-full bg-[#f5f5f5e8] py-12d border-t-[1.5px] border-dashed border-black/20">
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="w-full bg-[#f5f5f5e8] py-12d border-t-[1.5px] border-dashed border-black/20"
+          >
       <div className="max-w-6xl mx-auto px-6 text-center text-black border-r-[1.5px] border-l-[1.5px] border-dashed border-black/20">
         <div className="max-w-6xl mx-auto px-6 py-6 border-dashed border-b-[1.5px] border-black/20">
           <div className="max-w-6xl mx-auto">
@@ -60,7 +65,7 @@ export default function AchievementsSection() {
           </div>
         </div>
       </div>
-    </section>
+      </motion.section>
   );
 }
 
